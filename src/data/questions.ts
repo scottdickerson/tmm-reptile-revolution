@@ -5,7 +5,7 @@
 
 import { StaticImageData } from "next/image";
 
-enum Characteristic {
+export enum Characteristic {
   WATER_ALWAYS = "WATER_ALWAYS",
   WATER_MOSTLY = "WATER_MOSTLY",
   WATER_RARELY = "WATER_RARELY",
@@ -41,20 +41,20 @@ enum Characteristic {
   CLAWS = "CLAWS",
 }
 
-interface BaseQuestion {
+interface BaseQuestionType {
   question: string;
   type: "image" | "text";
 }
 
-export interface ImageQuestion extends BaseQuestion {
+export interface ImageQuestionType extends BaseQuestionType {
   choices: { image: StaticImageData; matchingCharacteristic: Characteristic }[];
 }
 
-export interface TextQuestion extends BaseQuestion {
+export interface TextQuestionType extends BaseQuestionType {
   choices: { text: string; matchingCharacteristic: Characteristic }[];
 }
 
-export const questions: (ImageQuestion | TextQuestion)[] = [
+export const questions: (ImageQuestionType | TextQuestionType)[] = [
   {
     question: "Want to go swimming?",
     type: "text",
@@ -88,4 +88,26 @@ export const questions: (ImageQuestion | TextQuestion)[] = [
       },
     ],
   },
+  {
+    question: "What do you want to eat?",
+    type: "text",
+    choices: [
+      { text: "Veggies", matchingCharacteristic: Characteristic.PLANT_EATER },
+      { text: "Steak", matchingCharacteristic: Characteristic.MEAT_EATER },
+      {
+        text: "Steak and veggies",
+        matchingCharacteristic: Characteristic.OMNIVORE,
+      },
+    ],
+  },
 ];
+
+export const isTextQuestion = (
+  question: ImageQuestionType | TextQuestionType
+): question is TextQuestionType => question.type === "text";
+
+export const isImageQuestion = (
+  question: ImageQuestionType | TextQuestionType
+): question is ImageQuestionType => question.type === "image";
+
+export const QUESTION_COUNT = 3;
