@@ -37,7 +37,9 @@ export const dinosaurs: Record<string, Dinosaur> = {
   },
 };
 
-export const findBestMatchingDinosaur = (characteristics: Characteristic[]) => {
+export const findBestMatchingDinosaur = (
+  characteristics: Characteristic[]
+): string => {
   const dinoNameToCharacteristicCountMap = Object.entries(dinosaurs).reduce(
     (acc, [dinoName, dino]) => {
       const matchingCharacteristics = dino.characteristics.filter(

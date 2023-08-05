@@ -1,9 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Commissioner } from "next/font/google";
 import { QuizProvider } from "./providers/QuizProvider";
+import classNames from "classnames";
 
 const inter = Inter({ subsets: ["latin"] });
+const commissioner = Commissioner({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={classNames(commissioner.className)}>
         <QuizProvider>{children}</QuizProvider>
       </body>
     </html>

@@ -10,19 +10,21 @@ export const TextQuestion = ({ question, onAnswer }: QuestionProps) => {
   const { question: questionText, choices } = question;
 
   return (
-    <div className="flex flex-col gap-54">
-      {questionText}
-      {choices.map(({ text, matchingCharacteristic }) => (
-        <button
-          key={text}
-          className="flex flex-col gap-31"
-          onClick={() => {
-            onAnswer(matchingCharacteristic);
-          }}
-        >
-          {text}
-        </button>
-      ))}
+    <div className="flex flex-col gap-14  items-center justify-center ">
+      <h1 className="questionText">{questionText}</h1>
+      <div className="flex flex-col gap-8">
+        {choices.map(({ text, matchingCharacteristic }) => (
+          <button
+            className="h-20 rounded-full button px-11"
+            key={text}
+            onClick={() => {
+              onAnswer(matchingCharacteristic);
+            }}
+          >
+            {text}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };

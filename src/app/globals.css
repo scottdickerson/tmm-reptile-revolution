@@ -10,3 +10,23 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #293f21;
 }
+
+.button {
+  background: #b9bb8b;
+  color: #293f21;
+  text-align: center;
+  width: 513px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px; /* 128.571% */
+}
+
+.questionText {
+  color: #ede9cd;
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

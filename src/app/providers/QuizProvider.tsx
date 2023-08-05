@@ -27,7 +27,7 @@ export const QuizProvider = ({ children }: PropsWithChildren<{}>) => {
   const [currentQuizQuestions, setCurrentQuizQuestions] = useState<
     (ImageQuestionType | TextQuestionType)[]
   >(shuffle(questions).slice(0, QUESTION_COUNT));
-  const [characteristics, setCharacteristics] = useState<string[]>([]);
+  const [characteristics, setCharacteristics] = useState<Characteristic[]>([]);
 
   const reloadCurrentQuizQuestions = () => {
     setCurrentQuizQuestions(shuffle(questions).slice(0, QUESTION_COUNT));
