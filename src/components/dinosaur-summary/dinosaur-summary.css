@@ -1,0 +1,8 @@
+.dinosaurTitle {
+  font-size: 65px;
+}
+
+.dinosaurDescription {
+  font-family: var(--archivo);
+  font-size: 25px;
+}

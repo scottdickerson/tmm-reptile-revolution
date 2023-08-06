@@ -1,0 +1,11 @@
+.calculatingTitle {
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.calculatingPeriod {
+  color: rgb(36, 50, 28);
+}

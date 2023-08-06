@@ -27,8 +27,7 @@ export default function Quiz({ params }: { params: { question: string } }) {
   const handleAnswer = (matchingCharacteristic: Characteristic) => {
     addCharacteristic(matchingCharacteristic);
     if (questionNumber + 1 === QUESTION_COUNT) {
-      const matchingDinosaurName = findBestMatchingDinosaur(characteristics);
-      push(`/quiz/results/${matchingDinosaurName}`);
+      push(`/quiz/calculating`);
     } else {
       push(`/quiz/question/${questionNumber + 1}`);
     }

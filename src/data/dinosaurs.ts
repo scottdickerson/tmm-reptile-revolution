@@ -1,8 +1,16 @@
 import { shuffle } from "lodash";
 import { Characteristic } from "./questions";
+import { StaticImageData } from "next/image";
+import largeTherapod from "@/data/results-images/large-therapod.svg";
+import pterosaur from "@/data/results-images/pterosaur.svg";
 
 export interface Dinosaur {
   characteristics: Characteristic[];
+  image: StaticImageData;
+  summary: {
+    title: string;
+    description: string;
+  };
   time: string;
   location: string;
   size: string;
@@ -11,7 +19,12 @@ export interface Dinosaur {
 }
 
 export const dinosaurs: Record<string, Dinosaur> = {
-  tyrannosaurus: {
+  largeTherapod: {
+    image: largeTherapod,
+    summary: {
+      title: "You’re a large therapod!",
+      description: "You're a large therapod!",
+    },
     characteristics: [
       Characteristic.CLAWS,
       Characteristic.RUNNING,
@@ -24,6 +37,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact2: "T-Rex is a carnivore",
   },
   pterosaur: {
+    image: pterosaur,
+    summary: {
+      title: "You’re a pterosaur!",
+      description:
+        "Pterosaurs were a family of flying reptiles. They came in lots of shapes and sizes.",
+    },
     characteristics: [
       Characteristic.FLYING,
       Characteristic.LONG_NECK,
