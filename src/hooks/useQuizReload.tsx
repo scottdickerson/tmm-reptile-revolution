@@ -1,4 +1,4 @@
-import { QuizContext } from "@/app/providers/QuizProvider";
+import { QuizContext } from "@/providers/QuizProvider";
 import { useContext, useEffect } from "react";
 
 // This tiny client hook can be place in any page to reload the current quiz questions

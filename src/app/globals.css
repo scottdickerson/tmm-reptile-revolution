@@ -2,31 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #293f21;
-}
-
-.button {
-  background: #b9bb8b;
-  color: #293f21;
-  text-align: center;
-  width: 513px;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 45px; /* 128.571% */
-}
-
-.questionText {
   color: #ede9cd;
-  text-align: center;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  background-color: #2a3f21;
+  font-family: Commissioner;
+}
+
+.backgroundImage {
+  opacity: 0.2;
+  background-image: url("images/backgroundDinos.png");
+  mix-blend-mode: multiply;
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 100%;
+  background-repeat: repeat-y;
 }

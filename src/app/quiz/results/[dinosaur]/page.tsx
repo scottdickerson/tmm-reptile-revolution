@@ -1,6 +1,6 @@
 "use client";
 import { useContext, useEffect } from "react";
-import { QuizContext } from "../../providers/QuizProvider";
+import { QuizContext } from "../../../../providers/QuizProvider";
 import { useRouter } from "next/navigation";
 
 export default function Results({ params }: { params: { dinosaur: string } }) {

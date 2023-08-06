@@ -1,0 +1,22 @@
+.button {
+  background: #b9bb8b;
+  color: #293f21;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px; /* 128.571% */
+}
+
+.startOverButton {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  font-size: 17px;
+  line-height: 19px;
+  right: 139px;
+  bottom: 148px;
+  border-radius: 50%;
+  padding: 0px 8px;
+  text-transform: uppercase;
+}

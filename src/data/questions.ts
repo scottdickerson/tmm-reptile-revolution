@@ -4,6 +4,9 @@
  */
 
 import { StaticImageData } from "next/image";
+import frills from "@/data/images/frills.png";
+import crest from "@/data/images/crest.png";
+import feathers from "@/data/images/feathers.png";
 
 export enum Characteristic {
   WATER_ALWAYS = "WATER_ALWAYS",
@@ -100,6 +103,24 @@ export const questions: (ImageQuestionType | TextQuestionType)[] = [
       },
     ],
   },
+  {
+    question: "Pick an accessory.",
+    type: "image",
+    choices: [
+      {
+        image: frills,
+        matchingCharacteristic: Characteristic.FRILLS,
+      },
+      {
+        image: feathers,
+        matchingCharacteristic: Characteristic.FEATHERS,
+      },
+      {
+        image: crest,
+        matchingCharacteristic: Characteristic.CRESTS,
+      },
+    ],
+  },
 ];
 
 export const isTextQuestion = (
@@ -110,4 +131,4 @@ export const isImageQuestion = (
   question: ImageQuestionType | TextQuestionType
 ): question is ImageQuestionType => question.type === "image";
 
-export const QUESTION_COUNT = 3;
+export const QUESTION_COUNT = 4;
