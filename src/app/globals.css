@@ -6,6 +6,9 @@ body {
   color: #ede9cd;
   background-color: #2a3f21;
   font-family: Commissioner;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
 }
 
 .backgroundImage {

@@ -5,6 +5,7 @@ import { CenterEllipsis } from "@/components/center-ellipsis/CenterEllipsis";
 import { findBestMatchingDinosaur } from "@/data/dinosaurs";
 import { QuizContext } from "@/providers/QuizProvider";
 import "./calculating.css";
+import { ResultCategory } from "@/components/results-switcher/ResultsSwitcher";
 
 export default function Calculating() {
   const { push } = useRouter();
@@ -21,13 +22,13 @@ export default function Calculating() {
   useEffect(() => {
     const timer = setTimeout(() => {
       const matchingDinosaurName = findBestMatchingDinosaur(characteristics);
-      push(`/quiz/results/${matchingDinosaurName}`);
+      push(`/quiz/results/${matchingDinosaurName}/${ResultCategory.SUMMARY}}`);
     }, 5000);
     return () => clearTimeout(timer);
   }, [push, characteristics]);
 
   return (
-    <div className="flex flex-col items-center min-h-screen justify-center">
+    <div className="flex flex-col items-center h-full justify-center">
       <CenterEllipsis>
         <h1 className="calculatingTitle">
           Calculating your results

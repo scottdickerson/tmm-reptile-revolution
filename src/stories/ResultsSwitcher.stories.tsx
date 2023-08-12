@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { ResultsSwitcher } from "../components/results-switcher/ResultsSwitcher";
+import {
+  ResultCategory,
+  ResultsSwitcher,
+} from "../components/results-switcher/ResultsSwitcher";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
@@ -17,4 +20,6 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const ResultsSwitcherStory: Story = {};
+export const ResultsSwitcherStory: Story = {
+  args: { category: ResultCategory.SUMMARY, dinosaur: "allosaurus" },
+};

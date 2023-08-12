@@ -1,0 +1,23 @@
+.resultsSwitcher {
+  height: fit-content;
+}
+
+.resultsConnector {
+  right: -64px;
+  bottom: 139px;
+}
+.resultsConnectorFunFact2 {
+  bottom: 85px;
+}
+.resultsConnectorSummary {
+  top: -43px;
+}
+.learnMore {
+  top: 0px;
+  right: -80px;
+  width: 50px;
+  font-size: 40px;
+  line-height: 40px;
+  transform: rotate(-25deg);
+  font-family: var(--archivo);
+}
