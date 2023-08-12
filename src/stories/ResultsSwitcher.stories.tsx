@@ -21,5 +21,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const ResultsSwitcherStory: Story = {
-  args: { category: ResultCategory.SUMMARY, dinosaur: "allosaurus" },
+  args: { category: ResultCategory.SUMMARY },
 };

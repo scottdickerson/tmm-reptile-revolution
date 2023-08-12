@@ -14,10 +14,10 @@
 }
 .learnMore {
   top: 0px;
-  right: -80px;
-  width: 50px;
+  right: -130px;
   font-size: 40px;
   line-height: 40px;
   transform: rotate(-25deg);
   font-family: var(--archivo);
+  text-align: center;
 }

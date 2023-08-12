@@ -9,7 +9,6 @@ import {
   ResultCategory,
   ResultsSwitcher,
 } from "@/components/results-switcher/ResultsSwitcher";
-import { useSearchParams, useParams } from "next/navigation";
 import "./results.css";
 import { DinosaurSwitcher } from "@/components/dinosaur-switcher/DinosaurSwitcher";
 import { DinosaurTime } from "@/components/dinosaur-time/DinosaurTime";
@@ -37,22 +36,10 @@ export default function Results({
   const dinosaur = dinosaurs[dinosaurParam];
 
   const { characteristics } = useContext(QuizContext);
-  const { push } = useRouter();
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     push("/");
-  //   }, 80000);
-  //   return () => clearTimeout(timer);
-  // }, [push]);
 
   return (
     <div className="flex flex-row h-full results items-center ">
-      <ResultsSwitcher
-        dinosaur={dinosaurParam}
-        className="justify-self-start"
-        category={category}
-      />
+      <ResultsSwitcher className="justify-self-start" category={category} />
       <div
         className={`flex flex-col ${determineGap(
           category

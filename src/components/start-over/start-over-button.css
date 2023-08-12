@@ -1,0 +1,12 @@
+button.startOverButton {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  font-size: 17px;
+  line-height: 19px;
+  right: 139px;
+  bottom: 148px;
+  border-radius: 50%;
+  padding: 0px 8px;
+  text-transform: uppercase;
+}

@@ -5,6 +5,22 @@ import therapodLarge from "@/data/results-images/large-therapod.svg";
 import pterosaur from "@/data/results-images/pterosaur.svg";
 import hornedDinosaur from "@/data/results-images/horned-dinosaur/horned-dinosaur.gif";
 import hornedDinosaurTime from "@/data/results-images/horned-dinosaur/horned-dinosaur-time.gif";
+import turtleSeaTime from "@/data/results-images/turtle-sea/turtle-sea-time.gif";
+import sauropodTime from "@/data/results-images/sauropod-time.gif";
+import therapodLargeTime from "@/data/results-images/therapod-large-time.gif";
+import birdTime from "@/data/results-images/bird-time.gif";
+import therapodSmallTime from "@/data/results-images/therapod-small-time.gif";
+import duckbillDinosaurTime from "@/data/results-images/duckbill-dinosaur-time.gif";
+import armoredDinosaurTime from "@/data/results-images/armored-dinosaur-time.gif";
+import crocodileLargeTime from "@/data/results-images/crocodile-large-time.gif";
+import plesiosaurShortNeckTime from "@/data/results-images/plesiosaur-short-neck-time.gif";
+import plesiosaurLongNeckTime from "@/data/results-images/plesiosaur-long-neck-time.gif";
+import pterosaurTime from "@/data/results-images/pterosaur-time.gif";
+import mosasaurTime from "@/data/results-images/mosasaur-time.gif";
+import crocodileSmallTime from "@/data/results-images/crocodile-small-time.gif";
+import snakeTime from "@/data/results-images/snake-time.gif";
+import lizardTime from "@/data/results-images/lizard-time.gif";
+import turtleLandTime from "@/data/results-images/turtle-land-time.gif";
 
 export interface Dinosaur {
   characteristics: Characteristic[];
@@ -46,7 +62,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SWIM,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: turtleSeaTime,
+      description:
+        'The oldest known fossil sea turtle is 120 million years old, but the earliest "stem" turtles got their start in the Middle Triassic.',
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -74,7 +94,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: turtleLandTime,
+      description:
+        "Turtles emerged millions of years before the dinosaurs and are still part of animal communities across the world.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -103,7 +127,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.RUN,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: lizardTime,
+      description:
+        "Lizards emerged millions of years before the dinosaurs and are still part of animal communities across the world.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -130,7 +158,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.LONG_BODY,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: snakeTime,
+      description:
+        "Snakes evolved from lizard like ancestors during the Middle Jurassic and they are still part of animal communities across the world.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -160,7 +192,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SWIM,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: crocodileLargeTime,
+      description:
+        "Crocodiles emerged during the early Jurassic and they are still part of animal communities across the world.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -190,7 +226,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SWIM,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: crocodileSmallTime,
+      description:
+        "Crocodiles emerged during the early Jurassic and they are still part of animal communities across the world.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -219,7 +259,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SWIM,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: mosasaurTime,
+      description:
+        "Mosasaurs came along relatively late in the game. They emerged in the Late Cretaceous and did not survive the extinction event.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -249,7 +293,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SWIM,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: plesiosaurLongNeckTime,
+      description:
+        "Plesiosaurs appeared during the Late Triassic. None survived the massive extinction event at the end of the Cretaceous.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -278,7 +326,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SWIM,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: plesiosaurShortNeckTime,
+      description:
+        "Plesiosaurs appeared during the Late Triassic. None survived the massive extinction event at the end of the Cretaceous.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -310,7 +362,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.LONG_BODY,
       Characteristic.FLY,
     ],
-    time: "Long time ago",
+    time: {
+      image: pterosaurTime,
+      description:
+        "Pterosaurs glided along for over a hundred million years, but none survived the end-Cretaceous extinction event.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -338,7 +394,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      image: armoredDinosaurTime,
+      description:
+        "Armored dinosaurs emerged in the Middle Jurassic, but none survived the extinction event at the end of the Cretaceous.",
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -402,7 +462,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.RUN,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      description:
+        "These dinos appeared in the Late Cretaceous, making them one of the last types of dinosaurs to emerge before the extinction event.",
+      image: duckbillDinosaurTime,
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -433,7 +497,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.RUN,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      description:
+        "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
+      image: therapodSmallTime,
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -465,7 +533,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.FLY,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      description:
+        "Avian theropods emerged in the Early Cretaceous and they are still part of animal communities around the world.",
+      image: birdTime,
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",
@@ -496,7 +568,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.BALANCED_BODY,
       Characteristic.RUN,
     ],
-    time: "Long time ago",
+    time: {
+      description:
+        "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
+      image: therapodLargeTime,
+    },
     location: "Somewhere in Texas",
     size: "Big",
     funFact1: "T-Rex is a dinosaur",
@@ -525,7 +601,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.LONG_BODY,
     ],
     image: pterosaur,
-    time: "Long time ago",
+    time: {
+      description:
+        "Sauropods were one of the earlier dinosaur groups to evolve, but none survived the extinction event at the end of the Cretaceous.",
+      image: sauropodTime,
+    },
     location: "Somewhere in Texas",
     size: "Medium",
     funFact1: "Pterosaur is a dinosaur",

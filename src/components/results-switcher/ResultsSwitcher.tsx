@@ -24,8 +24,7 @@ export enum ResultCategory {
   FUN_FACT_2 = "fun-fact2",
 }
 interface ResultsSwitcherProps {
-  dinosaur: string;
-  category?: ResultCategory;
+  category: ResultCategory;
   className?: string;
 }
 
@@ -72,7 +71,12 @@ export const ResultsSwitcher = ({
       <>
         <ConnectorLine category={category}></ConnectorLine>
         {category === ResultCategory.SUMMARY && (
-          <div className="absolute learnMore">Learn more</div>
+          <Link
+            className="absolute learnMore"
+            href={`./${ResultCategory.TIME}`}
+          >
+            Learn <br></br>more
+          </Link>
         )}
       </>
       <div className="flex flex-col items-center relative">

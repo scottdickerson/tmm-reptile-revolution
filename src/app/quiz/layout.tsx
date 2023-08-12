@@ -1,6 +1,5 @@
 "use client";
-import { Button } from "@/components/button/Button";
-import "@/components/button/button.css";
+import { StartOverButton } from "@/components/start-over/StartOverButton";
 import { useRouter } from "next/navigation";
 
 export default function QuestionLayout({
@@ -12,9 +11,12 @@ export default function QuestionLayout({
   return (
     <>
       {children}
-      <Button className="startOverButton" onClick={() => push("/")}>
+      <StartOverButton
+        className="startOverStartOverButton"
+        onClick={() => push("/")}
+      >
         Start Over
-      </Button>
+      </StartOverButton>
     </>
   );
 }
