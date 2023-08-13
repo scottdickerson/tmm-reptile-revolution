@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { ImageQuestion } from "../components/image-question/ImageQuestion";
-import frills from "../data/images/frills.png";
-import feathers from "../data/images/feathers.png";
-import crest from "../data/images/crest.png";
+import feathers from "../data/question-images/Pick an Accessory/WebPs/Accessory1-Boa@2x.webp";
+import frills from "../data/question-images/Pick an Accessory/WebPs/Accessory2-LaceCollar@2x.webp";
+import crest from "../data/question-images/Pick an Accessory/WebPs/Accessory3-Hat@2x.webp";
 import { Characteristic } from "../data/questions";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
@@ -28,12 +28,12 @@ export const ImageQuestionStory: Story = {
       question: "Pick an accessory.",
       choices: [
         {
-          image: frills,
-          matchingCharacteristic: Characteristic.FRILLS,
-        },
-        {
           image: feathers,
           matchingCharacteristic: Characteristic.FEATHERS,
+        },
+        {
+          image: frills,
+          matchingCharacteristic: Characteristic.FRILLS,
         },
         {
           image: crest,

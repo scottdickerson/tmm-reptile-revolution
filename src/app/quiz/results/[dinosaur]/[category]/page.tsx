@@ -12,6 +12,8 @@ import "../../results.css";
 import { DinosaurSwitcher } from "@/components/dinosaur-switcher/DinosaurSwitcher";
 import { DinosaurTime } from "@/components/dinosaur-time/DinosaurTime";
 import { DinosaurFunFact1 } from "@/components/dinosaur-fun-fact1/DinosaurFunFact1";
+import { DinosaursResultsSecondFrame } from "@/components/dinosaur-results-second-frame/DinosaurResultsSecondFrame";
+import { DinosaurLocation } from "@/components/dinosaur-location/DinosaurLocation";
 
 const determineGap = (category: ResultCategory) => {
   switch (category) {
@@ -45,7 +47,10 @@ export default function Results({
           category
         )} items-center flex-grow`}
       >
-        <Image src={dinosaur.image} alt={dinosaur.summary.title} />
+        {(category === ResultCategory.SUMMARY ||
+          category === ResultCategory.TIME) && (
+          <Image src={dinosaur.image} alt={dinosaur.summary.title} />
+        )}
         {category === ResultCategory.SUMMARY && (
           <DinosaurSummary dinosaur={dinosaur} />
         )}
@@ -54,6 +59,15 @@ export default function Results({
         )}
         {category === ResultCategory.FUN_FACT_1 && (
           <DinosaurFunFact1 dinosaur={dinosaur} />
+        )}
+        {(category === ResultCategory.LOCATION ||
+          category === ResultCategory.SIZE ||
+          category === ResultCategory.FUN_FACT_2) && (
+          <DinosaursResultsSecondFrame dinosaur={dinosaur}>
+            {category === ResultCategory.LOCATION && (
+              <DinosaurLocation dinosaur={dinosaur} />
+            )}
+          </DinosaursResultsSecondFrame>
         )}
         <h2 className="text-lg absolute top-0 left-0">
           Player selected characteristics:

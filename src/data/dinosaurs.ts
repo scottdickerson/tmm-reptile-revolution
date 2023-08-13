@@ -26,7 +26,26 @@ import snakeTime from "@/data/timeline-images/snake-time.gif";
 import lizardTime from "@/data/timeline-images/lizard-time.gif";
 import turtleLandTime from "@/data/timeline-images/turtle-land-time.gif";
 
+import turtleSeaFossil from "@/data/fossil-images/2x/Turtle (sea)@2x.webp";
+import turtleLandFossil from "@/data/fossil-images/2x/Turtle (land)@2x.webp";
+import lizardFossil from "@/data/fossil-images/2x/Lizard@2x.webp";
+import snakeFossil from "@/data/fossil-images/2x/Snake@2x.webp";
+import crocodileLargeFossil from "@/data/fossil-images/2x/Crocodile 1@2x.webp";
+import crocodileSmallFossil from "@/data/fossil-images/2x/Crocodile 2@2x.webp";
+import mosasaurFossil from "@/data/fossil-images/2x/Mosasur@2x.webp";
+import plesiosaurLongNeckFossil from "@/data/fossil-images/2x/Plesiosaur 1@2x.webp";
+import plesiosaurShortNeckFossil from "@/data/fossil-images/2x/Plesiosaur 2@2x.webp";
+import pterosaurFossil from "@/data/fossil-images/2x/Quetzalcoatlus northropi@2x.webp";
+import armoredDinosaurFossil from "@/data/fossil-images/2x/Armored Dino@2x.webp";
+import hornedDinosaurFossil from "@/data/fossil-images/2x/Horned Dinosaur@2x.webp";
+import duckbillDinosaurFossil from "@/data/fossil-images/2x/Duckbill Dinosaur@2x.webp";
+import therapodSmallFossil from "@/data/fossil-images/2x/Theropod (small)@2x.webp";
+import birdFossil from "@/data/fossil-images/2x/Bird@2x.webp";
+import therapodLargeFossil from "@/data/fossil-images/2x/Theropod (large)@2x.webp";
+import sauropodFossil from "@/data/fossil-images/2x/Sauropod@2x.webp";
+
 export interface Dinosaur {
+  scientificName: string;
   characteristics: Characteristic[];
   image: StaticImageData;
   summary: {
@@ -34,7 +53,7 @@ export interface Dinosaur {
     description: string;
   };
   time: { description: string; image: StaticImageData };
-  location: string;
+  location: { imageFossil: StaticImageData; description: string };
   size: string;
   funFact1: { title: string; description: string };
   funFact2: string;
@@ -48,6 +67,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Turtles are the only reptiles with a bony shell. They eventually diversified into many different family lines, including the sea turtle.",
     },
+    scientificName: "Protostega",
     characteristics: [
       Characteristic.WATER_ALWAYS,
       Characteristic.PLAIN_LOOK,
@@ -71,7 +91,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'The oldest known fossil sea turtle is 120 million years old, but the earliest "stem" turtles got their start in the Middle Triassic.',
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: turtleSeaFossil,
+      description:
+        "Scientists found an enormous fossilized sea turtle near Waco, Texas.",
+    },
     size: "Medium",
     funFact1: {
       title: "Shovel-shaped",
@@ -85,6 +109,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       title: "You’re a turtle!",
       description: "Turtles are the only reptiles with a bony shell.",
     },
+    scientificName: "Basilemys",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.PLAIN_LOOK,
@@ -107,7 +132,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Turtles emerged millions of years before the dinosaurs and are still part of animal communities across the world.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: turtleLandFossil,
+      description:
+        "Scientists find fossils of these Cretaceous land turtles in western North America, including Texas.",
+    },
     size: "Medium",
     funFact1: {
       title: "Land Dwellers",
@@ -122,6 +151,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Lizards are among the most ancient reptile body forms. All reptiles evolved from a lizard-like ancestor.",
     },
+    scientificName: "Bothriagenys",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.FRILLS,
@@ -144,7 +174,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Lizards emerged millions of years before the dinosaurs and are still part of animal communities across the world.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: lizardFossil,
+      description:
+        "Scientists found tiny fossils of Cretaceous lizards in Big Bend National Park.",
+    },
     size: "Medium",
     funFact1: {
       title: "Little Lizards",
@@ -159,6 +193,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Snakes may have no legs, but they get around just fine. Their streamlined bodies can fit into all types of tight spots.",
     },
+    scientificName: "Coniophis",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.PLAIN_LOOK,
@@ -179,7 +214,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Snakes evolved from lizard like ancestors during the Middle Jurassic and they are still part of animal communities across the world.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: snakeFossil,
+      description:
+        "Like many early snakes, Coniophis had tiny back legs. Snakes evolved from lizard-like ancestors.",
+    },
     size: "Medium",
     funFact1: {
       title: "That’s some back bone!",
@@ -194,6 +233,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and even little caimans.",
     },
+    scientificName: "Deinosuchus riograndensis",
     characteristics: [
       Characteristic.WATER_MOSTLY,
       Characteristic.SPIKES,
@@ -217,7 +257,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Crocodiles emerged during the early Jurassic and they are still part of animal communities across the world.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: crocodileLargeFossil,
+      description:
+        "Many types of extinct crocodiles lived in Cretaceous Texas, including Deinosuchus.",
+    },
     size: "Medium",
     funFact1: {
       title: "High Steppin’",
@@ -232,6 +276,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and even little caimans.",
     },
+    scientificName: "Scolomastax sahlsteini",
     characteristics: [
       Characteristic.WATER_MOSTLY,
       Characteristic.SPIKES,
@@ -255,7 +300,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Crocodiles emerged during the early Jurassic and they are still part of animal communities across the world.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: crocodileSmallFossil,
+      description:
+        "Lots of now-extinct types of crocodiles lived in Cretaceous Texas, including Scolomastax.",
+    },
     size: "Medium",
     funFact1: {
       title: "High Steppin’",
@@ -270,6 +319,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "These enormous, swimming reptiles ruled the ancient oceans, but they were not dinosaurs. They were part of the lizard and snake family.",
     },
+    scientificName: "Mosasaurus hoffmanii",
     characteristics: [
       Characteristic.WATER_ALWAYS,
       Characteristic.PLAIN_LOOK,
@@ -292,7 +342,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Mosasaurs came along relatively late in the game. They emerged in the Late Cretaceous and did not survive the extinction event.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: mosasaurFossil,
+      description:
+        "One of the most famous Texas mosasaurs was discovered along Onion Creek in Austin.",
+    },
     size: "Medium",
     funFact1: {
       title: "Suited for Swimming",
@@ -307,6 +361,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs were a family of swimming reptiles. They were great swimmers with a taste for seafood.",
     },
+    scientificName: "Libonectes",
     characteristics: [
       Characteristic.WATER_ALWAYS,
       Characteristic.PLAIN_LOOK,
@@ -330,7 +385,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs appeared during the Late Triassic. None survived the massive extinction event at the end of the Cretaceous.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: plesiosaurLongNeckFossil,
+      description:
+        "Libonectes was a long-necked plesiosaur that  swam in the shallow seas that once covered Texas.",
+    },
     size: "Medium",
     funFact1: {
       title: "Don’t Call Me Dinosaur!",
@@ -345,6 +404,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs were a family of swimming reptiles. They were great swimmers with a taste for seafood.",
     },
+    scientificName: "Trinacromerum",
     characteristics: [
       Characteristic.WATER_ALWAYS,
       Characteristic.PLAIN_LOOK,
@@ -367,7 +427,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs appeared during the Late Triassic. None survived the massive extinction event at the end of the Cretaceous.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: plesiosaurShortNeckFossil,
+      description:
+        "There were many different kinds of plesiosaurs. Trinacromerum had a shorter neck and longer snout.",
+    },
     size: "Medium",
     funFact1: {
       title: "Don’t Call Me Dinosaur!",
@@ -384,6 +448,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Pterosaurs were a family of flying reptiles. They came in lots of shapes and sizes.",
     },
+    scientificName: "Quetzalcoatlus northropi",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.CRESTS,
@@ -407,7 +472,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Pterosaurs glided along for over a hundred million years, but none survived the end-Cretaceous extinction event.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: pterosaurFossil,
+      description:
+        "Quetzalcoatlus northropi was discovered by a University of Texas at Austin graduate student.",
+    },
     size: "Medium",
     funFact1: {
       title: "Superpower?",
@@ -422,6 +491,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'Armored dinosaurs form the family group thyreophora - which means "shield bearers." They were a diverse group including all the ankylosaurs and stegosaurs.',
     },
+    scientificName: "Pawpawsaurus",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.SPIKES,
@@ -443,7 +513,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Armored dinosaurs emerged in the Middle Jurassic, but none survived the extinction event at the end of the Cretaceous.",
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: armoredDinosaurFossil,
+      description: "Pawpawsaurus was discovered in 1992 by a teenager!",
+    },
     size: "Medium",
     funFact1: {
       title: "Big-boned",
@@ -458,6 +531,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'Horned dinosaurs form the family group ceratopsia - which means "horned face." Triceratops is the most famous (but not the only) family member.',
     },
+    scientificName: "Torosaurus utahensis",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.FRILLS,
@@ -482,7 +556,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Horned Dinos evolved in the Late Cretaceous, making them one of the last types of dinosaurs to appear before the extinction event.",
       image: hornedDinosaurTime,
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: hornedDinosaurFossil,
+      description:
+        "Torosaurus fossils were discovered in Big Bend National Park.",
+    },
     size: "Medium",
     funFact1: {
       title: "Hardy Headgear",
@@ -497,6 +575,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'Duckbill dinosaurs form the family group hadrosauridae - which means "stout lizard." They have flat snouts and large, rounded bodies.',
     },
+    scientificName: "Gryposaurus alsatei",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.CRESTS,
@@ -519,7 +598,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "These dinos appeared in the Late Cretaceous, making them one of the last types of dinosaurs to emerge before the extinction event.",
       image: duckbillDinosaurTime,
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: duckbillDinosaurFossil,
+      description:
+        "Scientists found Gryposaurus fossils in Big Bend National Park. Hadrosaur fossils are rare in this area, so the discovery is significant.",
+    },
     size: "Medium",
     funFact1: {
       title: "Extra-large Extroverts",
@@ -534,6 +617,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Theropods are a diverse group.These two-legged terrors came in all sizes and eventually included birds. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
     },
+    scientificName: "Saurornitholestes",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.FEATHERS,
@@ -558,7 +642,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
       image: therapodSmallTime,
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: therapodSmallFossil,
+      description:
+        "Scientists have found fossilized teeth of Saurornitholestes in and around Big Bend National Park.",
+    },
     size: "Medium",
     funFact1: {
       title: "Two-legged Terrors",
@@ -573,6 +661,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Birds are a branch of the theropod dinosaur family. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
     },
+    scientificName: "Ichthyornis",
     characteristics: [
       Characteristic.WATER_MOSTLY,
       Characteristic.FEATHERS,
@@ -598,7 +687,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Avian theropods emerged in the Early Cretaceous and they are still part of animal communities around the world.",
       image: birdTime,
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: birdFossil,
+      description:
+        "Ichthyornis was a toothed seabird that could both fly and swim.",
+    },
     size: "Medium",
     funFact1: {
       title: "Feathered Fliers",
@@ -614,6 +707,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Theropods are a diverse group.These two-legged terrors came in all sizes and eventually included birds. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
     },
+    scientificName: "Tyrannosaurus",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.FEATHERS,
@@ -637,7 +731,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
       image: therapodLargeTime,
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: therapodLargeFossil,
+      description:
+        "Scientists have found fossils of Tyrannosaurus in Big Bend National Park.",
+    },
     size: "Big",
     funFact1: {
       title: "Two Steppin’!",
@@ -652,6 +750,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Long-necked sauropods are among the most popular dinosaurs. We imagine these dinos as gentle giants who spent their days peacefully munching on tree tops.",
     },
+    scientificName: "Alamosaurus",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.CRESTS,
@@ -674,7 +773,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Sauropods were one of the earlier dinosaur groups to evolve, but none survived the extinction event at the end of the Cretaceous.",
       image: sauropodTime,
     },
-    location: "Somewhere in Texas",
+    location: {
+      imageFossil: sauropodFossil,
+      description:
+        "Scientists found fossils of a massive Alamosaurus in Big Bend National Park.",
+    },
     size: "Medium",
     funFact1: {
       title: "Explore More!",

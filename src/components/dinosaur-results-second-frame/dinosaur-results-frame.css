@@ -1,0 +1,29 @@
+.dinosaurResultsFrame {
+  /*layout*/
+  width: 1207px;
+  height: 728px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+
+  /*style*/
+  border-radius: 38px;
+  border: 2px solid #b9bb8b;
+  background: #293f21;
+}
+
+.dinosaurResultsTitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 50px; /* 146.667% */
+}
+.dinosaurResultsSubtitle {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 38px;
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}

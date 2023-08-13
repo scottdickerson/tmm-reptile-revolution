@@ -1,0 +1,70 @@
+.dinosaurLocation {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  padding-left: 59px;
+
+  /* style */
+  font-family: var(--archivo);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ede9cd;
+}
+.dinosaurLocationMapSection {
+  /* layout */
+  width: 305px;
+  height: 505px;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-rows: 1fr 61px 61px 61px;
+  grid-template-columns: 129px 179px;
+  grid-template-areas:
+    "map map"
+    "fossilFindTitle location"
+    "scientificNameTitle scientificName"
+    "ageRangeTitle ageRange";
+
+  /* style */
+  border-radius: 16px;
+  border: 2px solid #b9bb8b;
+  background: #4f6840;
+  overflow: hidden;
+}
+
+.dinosaurLocationMap {
+  grid-area: map;
+  flex-shrink: 0;
+}
+.dinosaurGridRow {
+  border: 1px solid #b9bb8b;
+  padding: 0 17px;
+  display: flex;
+  line-height: 18px;
+  align-items: center;
+  text-align: left;
+}
+.dinosaurGridEvenRow {
+  background-color: #edeacd33;
+}
+.dinosaurGridOddRow {
+}
+
+.dinosaurLocationFossilSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.dinosaurLocationMapAndFossilSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 39px;
+}
