@@ -1,7 +1,6 @@
 "use client";
 import { useContext, useEffect } from "react";
 import { QuizContext } from "../../../../../providers/QuizProvider";
-import { useRouter } from "next/navigation";
 import { dinosaurs } from "@/data/dinosaurs";
 import Image from "next/image";
 import { DinosaurSummary } from "@/components/dinosaur-summary/DinosaurSummary";
@@ -9,9 +8,10 @@ import {
   ResultCategory,
   ResultsSwitcher,
 } from "@/components/results-switcher/ResultsSwitcher";
-import "./results.css";
+import "../../results.css";
 import { DinosaurSwitcher } from "@/components/dinosaur-switcher/DinosaurSwitcher";
 import { DinosaurTime } from "@/components/dinosaur-time/DinosaurTime";
+import { DinosaurFunFact1 } from "@/components/dinosaur-fun-fact1/DinosaurFunFact1";
 
 const determineGap = (category: ResultCategory) => {
   switch (category) {
@@ -51,6 +51,9 @@ export default function Results({
         )}
         {category === ResultCategory.TIME && (
           <DinosaurTime dinosaur={dinosaur} />
+        )}
+        {category === ResultCategory.FUN_FACT_1 && (
+          <DinosaurFunFact1 dinosaur={dinosaur} />
         )}
         <h2 className="text-lg absolute top-0 left-0">
           Player selected characteristics:

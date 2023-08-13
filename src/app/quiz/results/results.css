@@ -1,0 +1,9 @@
+.results {
+  padding: 78px 350px 78px 170px;
+  gap: 60px;
+}
+
+.backgroundBlur {
+  backdrop-filter: blur(5px);
+  z-index: -20;
+}

@@ -1,26 +1,30 @@
 import { shuffle } from "lodash";
 import { Characteristic } from "./questions";
 import { StaticImageData } from "next/image";
-import therapodLarge from "@/data/results-images/large-therapod.svg";
-import pterosaur from "@/data/results-images/pterosaur.svg";
-import hornedDinosaur from "@/data/results-images/horned-dinosaur/horned-dinosaur.gif";
-import hornedDinosaurTime from "@/data/results-images/horned-dinosaur/horned-dinosaur-time.gif";
-import turtleSeaTime from "@/data/results-images/turtle-sea/turtle-sea-time.gif";
-import sauropodTime from "@/data/results-images/sauropod-time.gif";
-import therapodLargeTime from "@/data/results-images/therapod-large-time.gif";
-import birdTime from "@/data/results-images/bird-time.gif";
-import therapodSmallTime from "@/data/results-images/therapod-small-time.gif";
-import duckbillDinosaurTime from "@/data/results-images/duckbill-dinosaur-time.gif";
-import armoredDinosaurTime from "@/data/results-images/armored-dinosaur-time.gif";
-import crocodileLargeTime from "@/data/results-images/crocodile-large-time.gif";
-import plesiosaurShortNeckTime from "@/data/results-images/plesiosaur-short-neck-time.gif";
-import plesiosaurLongNeckTime from "@/data/results-images/plesiosaur-long-neck-time.gif";
-import pterosaurTime from "@/data/results-images/pterosaur-time.gif";
-import mosasaurTime from "@/data/results-images/mosasaur-time.gif";
-import crocodileSmallTime from "@/data/results-images/crocodile-small-time.gif";
-import snakeTime from "@/data/results-images/snake-time.gif";
-import lizardTime from "@/data/results-images/lizard-time.gif";
-import turtleLandTime from "@/data/results-images/turtle-land-time.gif";
+
+import pterosaur from "@/data/dinosaur-images/pterosaur.svg";
+import hornedDinosaur from "@/data/dinosaur-images/horned-dinosaur.gif";
+import therapodLarge from "@/data/dinosaur-images/large-therapod.svg";
+import turtleLand from "@/data/dinosaur-images/turtle-land.svg";
+import turtleSea from "@/data/dinosaur-images/turtle-sea.svg";
+
+import hornedDinosaurTime from "@/data/timeline-images/horned-dinosaur-time.gif";
+import turtleSeaTime from "@/data/timeline-images/turtle-sea-time.gif";
+import sauropodTime from "@/data/timeline-images/sauropod-time.gif";
+import therapodLargeTime from "@/data/timeline-images/therapod-large-time.gif";
+import birdTime from "@/data/timeline-images/bird-time.gif";
+import therapodSmallTime from "@/data/timeline-images/therapod-small-time.gif";
+import duckbillDinosaurTime from "@/data/timeline-images/duckbill-dinosaur-time.gif";
+import armoredDinosaurTime from "@/data/timeline-images/armored-dinosaur-time.gif";
+import crocodileLargeTime from "@/data/timeline-images/crocodile-large-time.gif";
+import plesiosaurShortNeckTime from "@/data/timeline-images/plesiosaur-short-neck-time.gif";
+import plesiosaurLongNeckTime from "@/data/timeline-images/plesiosaur-long-neck-time.gif";
+import pterosaurTime from "@/data/timeline-images/pterosaur-time.gif";
+import mosasaurTime from "@/data/timeline-images/mosasaur-time.gif";
+import crocodileSmallTime from "@/data/timeline-images/crocodile-small-time.gif";
+import snakeTime from "@/data/timeline-images/snake-time.gif";
+import lizardTime from "@/data/timeline-images/lizard-time.gif";
+import turtleLandTime from "@/data/timeline-images/turtle-land-time.gif";
 
 export interface Dinosaur {
   characteristics: Characteristic[];
@@ -32,7 +36,7 @@ export interface Dinosaur {
   time: { description: string; image: StaticImageData };
   location: string;
   size: string;
-  funFact1: string;
+  funFact1: { title: string; description: string };
   funFact2: string;
 }
 
@@ -61,7 +65,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
       Characteristic.SWIM,
     ],
-    image: pterosaur,
+    image: turtleSea,
     time: {
       image: turtleSeaTime,
       description:
@@ -69,7 +73,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Shovel-shaped",
+      description:
+        "Turtle shells may have first evolved for digging, not protection!",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   turtleLand: {
@@ -93,7 +101,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SHELL_ARMOR_HORNS,
       Characteristic.STOCKY_BODY,
     ],
-    image: pterosaur,
+    image: turtleLand,
     time: {
       image: turtleLandTime,
       description:
@@ -101,7 +109,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Land Dwellers",
+      description:
+        "The earliest turtles lived on land, at least most of the time. Their strong front legs were good for digging burrows.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   lizard: {
@@ -134,7 +146,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Little Lizards",
+      description:
+        "Today some lizards, like the komodo dragon, are huge. But, the first lizards were pretty tiny.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   snake: {
@@ -165,7 +181,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "That’s some back bone!",
+      description:
+        "Snakes' long bodies have more vertebrae (individual back bones), than most other animals. You have 33 vertebrae, but the average snake has over 200!",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   crocodileLarge: {
@@ -199,7 +219,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "High Steppin’",
+      description:
+        'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move pretty quickly over rocks and vegetation.',
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   crocodile: {
@@ -233,7 +257,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "High Steppin’",
+      description:
+        'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move pretty quickly over rocks and vegetation.',
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   mosasaur: {
@@ -266,7 +294,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Suited for Swimming",
+      description:
+        "Mosasaurs  streamlined bodies and paddle-like limbs were well adapted to life in the water. However, their powerful tails were their strongest advantage - providing massive thrust and making them the fastest swimmers of their time.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   plesiosaurLongNeck: {
@@ -300,7 +332,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Don’t Call Me Dinosaur!",
+      description:
+        "Plesiosaurs weren't dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   plesiosaurShortNeck: {
@@ -333,7 +369,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Don’t Call Me Dinosaur!",
+      description:
+        "Plesiosaurs weren't dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
 
@@ -369,7 +409,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Superpower?",
+      description:
+        "The ability to fly is a huge advantage. Insects were the first animals to evolve winged flight. But, pterosaurs, avian dinosaurs (birds), and mammals also evolved to take to the skies.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   armoredDinosaur: {
@@ -401,7 +445,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Big-boned",
+      description:
+        'These dino\'s "armor" is formed by bony deposits that create hard protective plates over their bodies - probably as a defense against predators. Because the armor was made of bone, it survives in fossil form, allowing us to learn about these big-boned beasties!',
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   hornedDinosaur: {
@@ -436,7 +484,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Hardy Headgear",
+      description:
+        'Horned dionsaurs all have a bony "frill" at the back of their skulls, horns set behind their eyes, and a specialized beak.',
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   duckbillDinosaur: {
@@ -469,7 +521,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Extra-large Extroverts",
+      description:
+        "Fossil evidence shows that duckbilled dinos were social. They built nests close to one another, raised their young together, and just generally hung out, kind of like a flock of birds today.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   therapodSmall: {
@@ -504,7 +560,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Two-legged Terrors",
+      description:
+        "These dinosaurs were meat-eaters with blade-like serrated teeth. They could chase after their prey on two legs and evolved relatively large hands with grasping ability. Some non-avian theropods had feathers like their relatives, the birds.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   bird: {
@@ -540,7 +600,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Feathered Fliers",
+      description:
+        "Other theropods had feathers, but couldn't fly. While some other dinosaurs may have even had wing-like forelimbs, true birds were the first dinosaurs to evolve sustained powered flight.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
   therapodLarge: {
@@ -575,7 +639,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Big",
-    funFact1: "T-Rex is a dinosaur",
+    funFact1: {
+      title: "Two Steppin’!",
+      description:
+        "The first dinosaurs walked on two legs! The theropods, meat-eaters with blade-like serrated teeth, kept on walking and evolved relatively large hands with grasping ability.",
+    },
     funFact2: "T-Rex is a carnivore",
   },
   sauropod: {
@@ -608,7 +676,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: "Somewhere in Texas",
     size: "Medium",
-    funFact1: "Pterosaur is a dinosaur",
+    funFact1: {
+      title: "Explore More!",
+      description:
+        "You can see the fossilized hip bone of a juvenile Alamosaurus on the museum's first floor.",
+    },
     funFact2: "Pterosaur is a carnivore",
   },
 };
