@@ -23,7 +23,7 @@ export default function Calculating() {
     const timer = setTimeout(() => {
       const matchingDinosaurName = findBestMatchingDinosaur(characteristics);
       push(`/quiz/results/${matchingDinosaurName}/${ResultCategory.SUMMARY}`);
-    }, 5000);
+    }, 3000);
     return () => clearTimeout(timer);
   }, [push, characteristics]);
 

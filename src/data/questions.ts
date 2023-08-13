@@ -4,9 +4,42 @@
  */
 
 import { StaticImageData } from "next/image";
-import frills from "@/data/images/frills.png";
-import crest from "@/data/images/crest.png";
-import feathers from "@/data/images/feathers.png";
+import accessoryBoa from "@/data/question-images/Pick an Accessory/WebPs/Accessory1-Boa@2x.webp";
+import accessoryLaceCollar from "@/data/question-images/Pick an Accessory/WebPs/Accessory2-LaceCollar@2x.webp";
+import accessoryHat from "@/data/question-images/Pick an Accessory/WebPs/Accessory3-Hat@2x.webp";
+import lookSpikes from "@/data/question-images/Pick a Look/WebPs/Look1-Spikes@2x.webp";
+import lookBeak from "@/data/question-images/Pick a Look/WebPs/Look2-Beak@2x.webp";
+import lookPlain from "@/data/question-images/Pick a Look/WebPs/Look3-Plain@2x.webp";
+import adventureHangGliding from "@/data/question-images/Pick an adventure/WebPs/Adventure 1-Hang Gliding@2x.webp";
+import adventureMountainBiking from "@/data/question-images/Pick an adventure/WebPs/Adventure 2-Mountain Biking@2x.webp";
+import adventureRockClimbing from "@/data/question-images/Pick an adventure/WebPs/Adventure 3-Rock Climbing@2x.webp";
+import workoutPushups from "@/data/question-images/Choose a Workout/WebPs/Workout1-PushUps@2x.webp";
+import workoutJumping from "@/data/question-images/Choose a Workout/WebPs/Workout2-JumpingJacks@2x.webp";
+import workoutRowing from "@/data/question-images/Choose a Workout/WebPs/Workout3-Rowing@2x.webp";
+import dogChihuahua from "@/data/question-images/Choose a dog/WebPs/Dog1-Chihuaha@2x.webp";
+import dogGreatDane from "@/data/question-images/Choose a dog/WebPs/Dog2-GreatDane@2x.webp";
+import dogBeagle from "@/data/question-images/Choose a dog/WebPs/Dog3-Beagle@2x.webp";
+import eatVeggies from "@/data/question-images/What do you want to eat/WebPs/What to Eat 1-Veggies@2x.webp";
+import eatSteak from "@/data/question-images/What do you want to eat/WebPs/What to Eat 2-Steak@2x.webp";
+import eatChickenAndVeggies from "@/data/question-images/What do you want to eat/WebPs/What to Eat 3-Chicken and Veggies@2x.webp";
+import protectionWall from "@/data/question-images/Best Protection/WebPs/Protection1-Wall@2x.webp";
+import protectionArmor from "@/data/question-images/Best Protection/WebPs/Protection2-Armor@2x.webp";
+import protectionLance from "@/data/question-images/Best Protection/WebPs/Protection3-Lance@2x.webp";
+import toolClaw from "@/data/question-images/Pick a tool/WebPs/Tool1-GrabbyClaw@2x.webp";
+import toolCanOpener from "@/data/question-images/Pick a tool/WebPs/Tool2-CanOpener@2x.webp";
+import toolGrillFork from "@/data/question-images/Pick a tool/WebPs/Tool3-GrillFork@2x.webp";
+import vacationBeach from "@/data/question-images/Pick a Vacation/WebPs/Vacation1-Beach@2x.webp";
+import vacationRiver from "@/data/question-images/Pick a Vacation/WebPs/Vacation2-River@2x.webp";
+import vacationForest from "@/data/question-images/Pick a Vacation/WebPs/Vacation3-Forest@2x.webp";
+import shirtTieDie from "@/data/question-images/Pick a Shirt/WebPs/Shirt1-Tie-Dye@2x.webp";
+import shirtCamo from "@/data/question-images/Pick a Shirt/WebPs/Shirt2-Camo@2x.webp";
+import shirtJersey from "@/data/question-images/Pick a Shirt/WebPs/Shirt3-Jersey@2x.webp";
+import weaponSword from "@/data/question-images/Pick a Weapon/WebPs/Weapon1-Sword@2x.webp";
+import weaponShield from "@/data/question-images/Pick a Weapon/WebPs/Weapon2-Shield@2x.webp";
+import weaponNunchucks from "@/data/question-images/Pick a Weapon/WebPs/Weapon3-Nunchucks@2x.webp";
+import toySlinkie from "@/data/question-images/Pick a Toy/WebPs/Toy1-Slinkie@2x.webp";
+import toyPotatoHead from "@/data/question-images/Pick a Toy/WebPs/Toy2-PotatoHead@2x.webp";
+import toyArmyGuys from "@/data/question-images/Pick a Toy/WebPs/Toy3-ArmyMan@2x.webp";
 
 export enum Characteristic {
   // WATER
@@ -132,69 +165,69 @@ export const questions: (ImageQuestionType | TextQuestionType)[] = [
     type: "image",
     choices: [
       {
-        image: frills,
-        matchingCharacteristic: Characteristic.FRILLS,
-      },
-      {
-        image: feathers,
+        image: accessoryBoa,
         matchingCharacteristic: Characteristic.FEATHERS,
       },
       {
-        image: crest,
+        image: accessoryLaceCollar,
+        matchingCharacteristic: Characteristic.FRILLS,
+      },
+      {
+        image: accessoryHat,
         matchingCharacteristic: Characteristic.CRESTS,
       },
     ],
   },
   {
     question: "Pick a look.",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "Leather Spiked Jacked (image)",
+        image: lookSpikes,
         matchingCharacteristic: Characteristic.SPIKES,
       },
       {
-        text: "guy with plague mask (image)",
+        image: lookBeak,
         matchingCharacteristic: Characteristic.BEAKS,
       },
       {
-        text: "khaki's and button down (image)",
+        image: lookPlain,
         matchingCharacteristic: Characteristic.PLAIN_LOOK,
       },
     ],
   },
   {
     question: "Pick an adventure.",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "Hang gliding (image)",
+        image: adventureHangGliding,
         matchingCharacteristic: Characteristic.FLYING,
       },
       {
-        text: "Mountain biking (image)",
+        image: adventureMountainBiking,
         matchingCharacteristic: Characteristic.RUNNING_SWIMMING_FAST,
       },
       {
-        text: "Rock Climbing (image)",
+        image: adventureRockClimbing,
         matchingCharacteristic: Characteristic.CLIMBING,
       },
     ],
   },
   {
     question: "Choose a workout.",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "Push ups (image)",
+        image: workoutPushups,
         matchingCharacteristic: Characteristic.STRONG_FORELIMBS,
       },
       {
-        text: "Jumping Jacks (image)",
+        image: workoutJumping,
         matchingCharacteristic: Characteristic.STRONG_BACKLIMBS,
       },
       {
-        text: "Rowing Machine (image)",
+        image: workoutRowing,
         matchingCharacteristic: Characteristic.STRONG_ALLLIMBS,
       },
     ],
@@ -219,18 +252,18 @@ export const questions: (ImageQuestionType | TextQuestionType)[] = [
   },
   {
     question: "Pick a dog.",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "chihuahua (image)",
+        image: dogChihuahua,
         matchingCharacteristic: Characteristic.SMALL,
       },
       {
-        text: "Great Dane (image)",
+        image: dogGreatDane,
         matchingCharacteristic: Characteristic.BIG,
       },
       {
-        text: "Beagle (image)",
+        image: dogBeagle,
         matchingCharacteristic: Characteristic.EITHER_OR_SIZE,
       },
     ],
@@ -238,36 +271,36 @@ export const questions: (ImageQuestionType | TextQuestionType)[] = [
 
   {
     question: "What do you want to eat?",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "veggies (image)",
+        image: eatVeggies,
         matchingCharacteristic: Characteristic.PLANT_EATER,
       },
       {
-        text: "steak (image)",
+        image: eatSteak,
         matchingCharacteristic: Characteristic.MEAT_EATER,
       },
       {
-        text: "chicken and veggies (image)",
+        image: eatChickenAndVeggies,
         matchingCharacteristic: Characteristic.OMNIVORE,
       },
     ],
   },
   {
     question: "What's the best protection?",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "fortress wall (image)",
+        image: protectionWall,
         matchingCharacteristic: Characteristic.SHELLS,
       },
       {
-        text: "Knight in shining armor (image)",
+        image: protectionArmor,
         matchingCharacteristic: Characteristic.ARMOR,
       },
       {
-        text: "Guy with a lance/spear (image)",
+        image: protectionLance,
         matchingCharacteristic: Characteristic.HORNS,
       },
     ],
@@ -328,90 +361,90 @@ export const questions: (ImageQuestionType | TextQuestionType)[] = [
   },
   {
     question: "Pick a tool.",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "extendy grabber things (image) ",
+        image: toolClaw,
         matchingCharacteristic: Characteristic.LONG_NECK,
       },
       {
-        text: "can opener (image)",
+        image: toolCanOpener,
         matchingCharacteristic: Characteristic.BEAK,
       },
       {
-        text: "sharp-tined grilling fork (image)",
+        image: toolGrillFork,
         matchingCharacteristic: Characteristic.CLAWS,
       },
     ],
   },
   {
     question: "Pick a Vacation Spot",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "Beach House (image)",
+        image: vacationBeach,
         matchingCharacteristic: Characteristic.OCEAN,
       },
       {
-        text: "River/Lake House (image)",
+        image: vacationRiver,
         matchingCharacteristic: Characteristic.NEAR_WATER,
       },
       {
-        text: "Forest Cabin (image)",
+        image: vacationForest,
         matchingCharacteristic: Characteristic.LIVES_ON_LAND,
       },
     ],
   },
   {
     question: "Pick a Shirt",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "tie-dye (image)",
+        image: shirtTieDie,
         matchingCharacteristic: Characteristic.PEACEFUL,
       },
       {
-        text: "Camo  (image)",
+        image: shirtCamo,
         matchingCharacteristic: Characteristic.AGGRESSIVE,
       },
       {
-        text: "Sports Jersey (image)",
+        image: shirtJersey,
         matchingCharacteristic: Characteristic.PEACEFUL_UNLESS_PROVOKED,
       },
     ],
   },
   {
     question: "Pick a Weapon",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "Sword (image)",
+        image: weaponSword,
         matchingCharacteristic: Characteristic.TEETH_CLAWS,
       },
       {
-        text: "Shield (image)",
+        image: weaponShield,
         matchingCharacteristic: Characteristic.SHELL_ARMOR_HORNS,
       },
       {
-        text: "Nunchucks (image)",
+        image: weaponNunchucks,
         matchingCharacteristic: Characteristic.OTHER_WEAPON,
       },
     ],
   },
   {
     question: "Pick a Toy",
-    type: "text",
+    type: "image",
     choices: [
       {
-        text: "Slinkie (image)",
+        image: toySlinkie,
         matchingCharacteristic: Characteristic.LONG_BODY,
       },
       {
-        text: "Mr. Potato Head (generic image)",
+        image: toyPotatoHead,
         matchingCharacteristic: Characteristic.STOCKY_BODY,
       },
       {
-        text: "Green Army guys (image)",
+        image: toyArmyGuys,
         matchingCharacteristic: Characteristic.BALANCED_BODY,
       },
     ],

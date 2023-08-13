@@ -9,7 +9,7 @@ export default function Home() {
   useQuizReload();
   return (
     <Link href="/quiz/question/0">
-      <main className="flex min-h-screen flex-col items-center justify-center p-24">
+      <main className="flex h-full flex-col items-center justify-center p-24">
         <CenterEllipsis>
           <h1 className="titleText">Reptile Revolution</h1>
           <p className="titleDescription">
