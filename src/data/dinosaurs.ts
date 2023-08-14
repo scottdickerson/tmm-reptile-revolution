@@ -44,6 +44,24 @@ import birdFossil from "@/data/fossil-images/2x/Bird@2x.webp";
 import therapodLargeFossil from "@/data/fossil-images/2x/Theropod (large)@2x.webp";
 import sauropodFossil from "@/data/fossil-images/2x/Sauropod@2x.webp";
 
+import alamosaurusMap from "@/data/location-images/2x/Alamosaurus@2x.webp";
+import basilemysMap from "@/data/location-images/2x/Basilemys@2x.webp";
+import bothriagenysMap from "@/data/location-images/2x/Bothriagenys@2x.webp";
+import coniophisMap from "@/data/location-images/2x/Coniophis@2x.webp";
+import deinosuchusMap from "@/data/location-images/2x/Deinosuchus@2x.webp";
+import gryposaurusMap from "@/data/location-images/2x/Gryposaurus@2x.webp";
+import ichthyornisMap from "@/data/location-images/2x/Ichthyornis@2x.webp";
+import libonectesMap from "@/data/location-images/2x/Libonectes@2x.webp";
+import mosasaurMap from "@/data/location-images/2x/Mosasaurus@2x.webp";
+import pawPawSaurusMap from "@/data/location-images/2x/Pawpawsaurus@2x.webp";
+import protostegaMap from "@/data/location-images/2x/Protostega@2x.webp";
+import quetzalcoatlusMap from "@/data/location-images/2x/Quetzalcoatlus@2x.webp";
+import saurornitholestesMap from "@/data/location-images/2x/Saurornitholestes@2x.webp";
+import scolomastaxMap from "@/data/location-images/2x/Scolomastax@2x.webp";
+import torosaurusMap from "@/data/location-images/2x/Torosaurus@2x.webp";
+import trinacromerumMap from "@/data/location-images/2x/Trinacromerum@2x.webp";
+import tyrannosaurusMap from "@/data/location-images/2x/Tyrannosaurus@2x.webp";
+
 export interface Dinosaur {
   scientificName: string;
   characteristics: Characteristic[];
@@ -53,7 +71,13 @@ export interface Dinosaur {
     description: string;
   };
   time: { description: string; image: StaticImageData };
-  location: { imageFossil: StaticImageData; description: string };
+  location: {
+    imageFossil: StaticImageData;
+    description: string;
+    imageMap: StaticImageData;
+    county: string;
+    ageRange: string;
+  };
   size: string;
   funFact1: { title: string; description: string };
   funFact2: string;
@@ -93,8 +117,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: turtleSeaFossil,
+      imageMap: protostegaMap,
+      county: "McLennan County",
       description:
         "Scientists found an enormous fossilized sea turtle near Waco, Texas.",
+      ageRange: "90-100 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -134,8 +161,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: turtleLandFossil,
+      imageMap: basilemysMap,
+      county: "Brewster County",
       description:
         "Scientists find fossils of these Cretaceous land turtles in western North America, including Texas.",
+      ageRange: "72-84 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -176,8 +206,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: lizardFossil,
+      imageMap: bothriagenysMap,
+      county: "Brewster County",
       description:
         "Scientists found tiny fossils of Cretaceous lizards in Big Bend National Park.",
+      ageRange: "72-84 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -216,8 +249,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: snakeFossil,
+      imageMap: coniophisMap,
+      county: "Brewster County",
       description:
         "Like many early snakes, Coniophis had tiny back legs. Snakes evolved from lizard-like ancestors.",
+      ageRange: "72-84 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -259,8 +295,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: crocodileLargeFossil,
+      imageMap: deinosuchusMap,
+      county: "Brewster County",
       description:
         "Many types of extinct crocodiles lived in Cretaceous Texas, including Deinosuchus.",
+      ageRange: "75-82 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -302,8 +341,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: crocodileSmallFossil,
+      imageMap: scolomastaxMap,
+      county: "Tarrant County",
       description:
         "Lots of now-extinct types of crocodiles lived in Cretaceous Texas, including Scolomastax.",
+      ageRange: "95-100 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -319,7 +361,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "These enormous, swimming reptiles ruled the ancient oceans, but they were not dinosaurs. They were part of the lizard and snake family.",
     },
-    scientificName: "Mosasaurus hoffmanii",
+    scientificName: "Mosasaurus hoffmannii",
     characteristics: [
       Characteristic.WATER_ALWAYS,
       Characteristic.PLAIN_LOOK,
@@ -344,8 +386,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: mosasaurFossil,
+      imageMap: mosasaurMap,
+      county: "Travis County",
       description:
         "One of the most famous Texas mosasaurs was discovered along Onion Creek in Austin.",
+      ageRange: "66-72 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -387,8 +432,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: plesiosaurLongNeckFossil,
+      imageMap: libonectesMap,
+      county: "Dallas County",
       description:
         "Libonectes was a long-necked plesiosaur that  swam in the shallow seas that once covered Texas.",
+      ageRange: "92-95 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -429,8 +477,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: plesiosaurShortNeckFossil,
+      imageMap: trinacromerumMap,
+      county: "Falls County",
       description:
         "There were many different kinds of plesiosaurs. Trinacromerum had a shorter neck and longer snout.",
+      ageRange: "89-93 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -474,8 +525,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: pterosaurFossil,
+      imageMap: quetzalcoatlusMap,
+      county: "Brewster County",
       description:
         "Quetzalcoatlus northropi was discovered by a University of Texas at Austin graduate student.",
+      ageRange: "66-72 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -515,7 +569,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: armoredDinosaurFossil,
+      imageMap: pawPawSaurusMap,
+      county: "Tarrant County",
       description: "Pawpawsaurus was discovered in 1992 by a teenager!",
+      ageRange: "100-105 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -558,8 +615,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: hornedDinosaurFossil,
+      imageMap: torosaurusMap,
+      county: "Brewster County",
       description:
         "Torosaurus fossils were discovered in Big Bend National Park.",
+      ageRange: "66-72 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -600,8 +660,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: duckbillDinosaurFossil,
+      imageMap: gryposaurusMap,
+      county: "Brewster County",
       description:
         "Scientists found Gryposaurus fossils in Big Bend National Park. Hadrosaur fossils are rare in this area, so the discovery is significant.",
+      ageRange: "66-72 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -644,8 +707,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: therapodSmallFossil,
+      imageMap: saurornitholestesMap,
+      county: "Brewster County",
       description:
         "Scientists have found fossilized teeth of Saurornitholestes in and around Big Bend National Park.",
+      ageRange: "72-84 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -689,8 +755,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: birdFossil,
+      imageMap: ichthyornisMap,
+      county: "Travis County",
       description:
         "Ichthyornis was a toothed seabird that could both fly and swim.",
+      ageRange: "83.5 million years old",
     },
     size: "Medium",
     funFact1: {
@@ -733,8 +802,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: therapodLargeFossil,
+      imageMap: tyrannosaurusMap,
+      county: "Brewster County",
       description:
         "Scientists have found fossils of Tyrannosaurus in Big Bend National Park.",
+      ageRange: "66-72 million years old",
     },
     size: "Big",
     funFact1: {
@@ -775,8 +847,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     location: {
       imageFossil: sauropodFossil,
+      imageMap: alamosaurusMap,
+      county: "Brewster County",
       description:
         "Scientists found fossils of a massive Alamosaurus in Big Bend National Park.",
+      ageRange: "66-70 million years old",
     },
     size: "Medium",
     funFact1: {

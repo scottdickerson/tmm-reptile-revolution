@@ -11,13 +11,26 @@ interface DinosaurLocationProps {
 export const DinosaurLocationMap = ({ dinosaur }: DinosaurLocationProps) => {
   return (
     <div className="dinosaurLocationMapSection">
-      <div className="dinosaurLocationMap"></div>
+      <div className="dinosaurLocationMap">
+        <Image
+          src={dinosaur.location.imageMap}
+          height="227"
+          width="243"
+          alt="location map"
+        ></Image>
+      </div>
       <div className="dinosaurGridRow dinosaurGridEvenRow">Fossil find</div>
-      <div className="dinosaurGridRow dinosaurGridEvenRow"></div>
+      <div className="dinosaurGridRow dinosaurGridEvenRow">
+        {dinosaur.location.county}
+      </div>
       <div className="dinosaurGridRow dinosaurGridOddRow">Scientific name</div>
-      <div className="dinosaurGridRow dinosaurGridOddRow"></div>
+      <div className="dinosaurGridRow dinosaurGridOddRow italicized">
+        {dinosaur.scientificName}
+      </div>
       <div className="dinosaurGridRow dinosaurGridEvenRow">Age range</div>
-      <div className="dinosaurGridRow dinosaurGridEvenRow"></div>
+      <div className="dinosaurGridRow dinosaurGridEvenRow">
+        {dinosaur.location.ageRange}
+      </div>
     </div>
   );
 };
@@ -29,7 +42,7 @@ export const DinosaurLocation = ({ dinosaur }: DinosaurLocationProps) => {
         <DinosaurLocationMap dinosaur={dinosaur} />
         <div className="dinosaurLocationFossilSection">
           <Image src={dinosaur.location.imageFossil} alt="fossil" />
-          <p className="dinosaurTimeDescription">
+          <p className="dinosaurTimeDescription dinosaurLocationDescription">
             <ItalicizeScientificName
               text={dinosaur.location.description}
               scientificName={dinosaur.scientificName}

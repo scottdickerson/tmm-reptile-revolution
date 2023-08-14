@@ -39,7 +39,15 @@
 .dinosaurLocationMap {
   grid-area: map;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.italicized {
+  font-style: italic;
+}
+
 .dinosaurGridRow {
   border: 1px solid #b9bb8b;
   padding: 0 17px;
@@ -67,4 +75,10 @@
   align-items: flex-start;
   justify-content: center;
   gap: 39px;
+  padding-right: 36px;
+}
+
+.dinosaurLocationDescription {
+  width: 110%;
+  padding-top: 8px;
 }
