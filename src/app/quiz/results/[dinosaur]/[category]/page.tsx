@@ -15,6 +15,7 @@ import { DinosaurFunFact1 } from "@/components/dinosaur-fun-fact1/DinosaurFunFac
 import { DinosaursResultsSecondFrame } from "@/components/dinosaur-results-second-frame/DinosaurResultsSecondFrame";
 import { DinosaurLocation } from "@/components/dinosaur-location/DinosaurLocation";
 import { DinosaurSize } from "@/components/dinosaur-size/DinosaurSize";
+import { DinosaurFunFact2 } from "@/components/dinosaur-fun-fact2/DinosaurFunFact2";
 
 const determineGap = (category: ResultCategory) => {
   switch (category) {
@@ -70,6 +71,9 @@ export default function Results({
             )}
             {category === ResultCategory.SIZE && (
               <DinosaurSize dinosaur={dinosaur} />
+            )}
+            {category === ResultCategory.FUN_FACT_2 && (
+              <DinosaurFunFact2 dinosaur={dinosaur} />
             )}
           </DinosaursResultsSecondFrame>
         )}

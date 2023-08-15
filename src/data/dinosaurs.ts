@@ -80,6 +80,24 @@ import torosaurusSize from "@/data/sizes-images/2x/torosaur@2x.webp";
 import trinacromerumSize from "@/data/sizes-images/2x/trinacromerum@2x.webp";
 import tyrannosaurusSize from "@/data/sizes-images/2x/tyrannosaur@2x.webp";
 
+import alamosaurusFunFact2 from "@/data/fun-fact2-images/2x/Alamosaurus@2x.webp";
+import basilemysFunFact2 from "@/data/fun-fact2-images/2x/Basilemys@2x.webp";
+import bothriagenysFunFact2 from "@/data/fun-fact2-images/2x/Bothrigenys@2x.webp";
+import coniophisFunFact2 from "@/data/fun-fact2-images/2x/Coniophis@2x.webp";
+import deinosuchusFunFact2 from "@/data/fun-fact2-images/2x/Deinosuchus@2x.webp";
+import gryposaurusFunFact2 from "@/data/fun-fact2-images/2x/Gryposaurus@2x.webp";
+import ichthyornisFunFact2 from "@/data/fun-fact2-images/2x/Ichthyornis@2x.webp";
+import libonectesFunFact2 from "@/data/fun-fact2-images/2x/libonectesFunFact2.svg";
+import mosasaurusFunFact2 from "@/data/fun-fact2-images/2x/Mosasaurus@2x.webp";
+import pawpawsaurusFunFact2 from "@/data/fun-fact2-images/2x/Pawpawsaurus@2x.webp";
+import protostegaFunFact2 from "@/data/fun-fact2-images/2x/Protostega@2x.webp";
+import quetzalcoatlusFunFact2 from "@/data/fun-fact2-images/2x/Quetzalcoatlus@2x.webp";
+import saurornitholestesFunFact2 from "@/data/fun-fact2-images/2x/Small Theropod@2x.webp";
+import scolomastaxFunFact2 from "@/data/fun-fact2-images/2x/Scolomastax@2x.webp";
+import torosaurusFunFact2 from "@/data/fun-fact2-images/2x/Torosaurus@2x.webp";
+import trinacromerumFunFact2 from "@/data/fun-fact2-images/2x/Trinacromerum@2x.webp";
+import tyrannosaurusFunFact2 from "@/data/fun-fact2-images/2x/Tyrannosaur@2x.webp";
+
 export interface Dinosaur {
   scientificName: string;
   characteristics: Characteristic[];
@@ -98,7 +116,7 @@ export interface Dinosaur {
   };
   size: { image: StaticImageData; description: string };
   funFact1: { title: string; description: string };
-  funFact2: string;
+  funFact2: { title: string; description: string; image: StaticImageData };
 }
 
 // TODO: Remove Partial once we have all the data
@@ -151,7 +169,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Turtle shells may have first evolved for digging, not protection!",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: protostegaFunFact2,
+      title: "Texas Treasure",
+      description:
+        "Today, parts of this fossilized sea turtle are on display on the Museum's first floor.",
+    },
   },
   turtleLand: {
     summary: {
@@ -199,7 +222,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "The earliest turtles lived on land, at least most of the time. Their strong front legs were good for digging burrows.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: basilemysFunFact2,
+      title: "Land Lover",
+      description:
+        "Like today's tortoises (shown above),  Basilemys lived on land and munched on vegetation.",
+    },
   },
   lizard: {
     summary: {
@@ -248,7 +276,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Today some lizards, like the komodo dragon, are huge. But, the first lizards were pretty tiny.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: bothriagenysFunFact2,
+      title: "Watch Out!",
+      description:
+        "Like modern lizards (shown above), Cretaceous lizards were hunted by dinosaurs and other predators.",
+    },
   },
   snake: {
     summary: {
@@ -295,7 +328,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Snakes' long bodies have more vertebrae (individual back bones), than most other animals. You have 33 vertebrae, but the average snake has over 200!",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: coniophisFunFact2,
+      title: "Asteroid Survivors!",
+      description:
+        "Unlike most of their reptile relatives, some snakes like Coniophis survived the massive extinction event at the end of the Cretaceous. ",
+    },
   },
   crocodileLarge: {
     summary: {
@@ -345,7 +383,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move pretty quickly over rocks and vegetation.',
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: deinosuchusFunFact2,
+      title: "Dino Diner",
+      description:
+        "Deinosuchus was not a dinosaur, but during its time it was the most fearsome predator. With a mouth full of enormous teeth, Deinosuchus was large enough to tackle dinosaurs that came to the water's edge for a drink.",
+    },
   },
   crocodile: {
     summary: {
@@ -395,7 +438,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move pretty quickly over rocks and vegetation.',
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: scolomastaxFunFact2,
+      title: "Crocodile Crew",
+      description:
+        "Like the modern-day Caiman (shown above), Scolomastax had a shorter snout than many of its crocodile cousins. During the Cretaceous, there were many more types of crocs than today.",
+    },
   },
   mosasaur: {
     summary: {
@@ -444,7 +492,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Mosasaurs  streamlined bodies and paddle-like limbs were well adapted to life in the water. However, their powerful tails were their strongest advantage - providing massive thrust and making them the fastest swimmers of their time.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: mosasaurusFunFact2,
+      title: "Local Lizard",
+      description:
+        "Scientists reconstructed its skeleton which is now displayed on the museum's first floor.",
+    },
   },
   plesiosaurLongNeck: {
     summary: {
@@ -494,7 +547,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs weren't dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: libonectesFunFact2,
+      title: "Southern Swimmer",
+      description:
+        'Libonectes\'s name is Greek for "southern swimmer," because fossils have been found in Texas and other southern parts of the United States.',
+    },
   },
   plesiosaurShortNeck: {
     summary: {
@@ -542,7 +600,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs weren't dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: trinacromerumFunFact2,
+      title: "See, food!",
+      description:
+        'Trinacromerum ate its dinner whole. Scientists have found fossilized gastropods "inside" these plesiosaurs.',
+    },
   },
 
   pterosaur: {
@@ -594,7 +657,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "The ability to fly is a huge advantage. Insects were the first animals to evolve winged flight. But, pterosaurs, avian dinosaurs (birds), and mammals also evolved to take to the skies.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: quetzalcoatlusFunFact2,
+      title: "Flying High?",
+      description:
+        "When Quetzalcoatlus was first displayed in the museum, scientists displayed it in flight. Today scientists think this creature spent a lot of time on the ground.",
+    },
   },
   armoredDinosaur: {
     summary: {
@@ -641,7 +709,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'These dino\'s "armor" is formed by bony deposits that create hard protective plates over their bodies - probably as a defense against predators. Because the armor was made of bone, it survives in fossil form, allowing us to learn about these big-boned beasties!',
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: pawpawsaurusFunFact2,
+      title: "Safety First",
+      description:
+        "Like other armored dinosaurs, Pawpawsaurus had a special bone near its eye socket. Its bony eyelid may have worked like safety goggles to protect its eyes in a scuffle.",
+    },
   },
   hornedDinosaur: {
     summary: {
@@ -692,7 +765,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         'Horned dionsaurs all have a bony "frill" at the back of their skulls, horns set behind their eyes, and a specialized beak.',
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: torosaurusFunFact2,
+      title: "Toro Trio",
+      description:
+        "You can see three Torosaurs in the mural to your left. You can also see a fossilized skull on the museum's first floor.",
+    },
   },
   duckbillDinosaur: {
     summary: {
@@ -740,7 +818,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Fossil evidence shows that duckbilled dinos were social. They built nests close to one another, raised their young together, and just generally hung out, kind of like a flock of birds today.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: gryposaurusFunFact2,
+      title: "Hook-nosed Lizard",
+      description:
+        'Hadro is Greek for "hooked nose." You can see its large nasal arch clearly in the mural to your right.',
+    },
   },
   therapodSmall: {
     summary: {
@@ -791,7 +874,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "These dinosaurs were meat-eaters with blade-like serrated teeth. They could chase after their prey on two legs and evolved relatively large hands with grasping ability. Some non-avian theropods had feathers like their relatives, the birds.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: saurornitholestesFunFact2,
+      title: "Pearly Whites",
+      description:
+        "Just like other reptiles, Saurornitholestes could grow a new teeth again and again to replace a worn ones. In the Big Bend, scientists found these fossilized teeth around the sites of ancient lakes and streams. Maybe this little theropod preferred to live in wetter habitats.",
+    },
   },
   bird: {
     summary: {
@@ -842,7 +930,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Other theropods had feathers, but couldn't fly. While some other dinosaurs may have even had wing-like forelimbs, true birds were the first dinosaurs to evolve sustained powered flight.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: ichthyornisFunFact2,
+      title: "Toothy Grin",
+      description: "Ichthyornis (and other early birds) had teeth!",
+    },
   },
   therapodLarge: {
     image: therapodLarge,
@@ -893,7 +985,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "The first dinosaurs walked on two legs! The theropods, meat-eaters with blade-like serrated teeth, kept on walking and evolved relatively large hands with grasping ability.",
     },
-    funFact2: "T-Rex is a carnivore",
+    funFact2: {
+      image: tyrannosaurusFunFact2,
+      title: "Head Hunter",
+      description:
+        "In the mural to your right, you can see the Texas tyrannosaur catching a Gryposaurus with its sharp teeth.",
+    },
   },
   sauropod: {
     summary: {
@@ -942,7 +1039,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "You can see the fossilized hip bone of a juvenile Alamosaurus on the museum's first floor.",
     },
-    funFact2: "Pterosaur is a carnivore",
+    funFact2: {
+      image: alamosaurusFunFact2,
+      title: "Pinkie Promise",
+      description:
+        "Sauropods had a fifth toe, like a human pinkie toe. This toe was long and helped support sauropods immense weight. In fact, sauropods were the largest creatures ever to live on land.",
+    },
   },
 };
 

@@ -1,0 +1,19 @@
+.dinosaurFunFact2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  > img {
+    height: 380px;
+    width: 1090px;
+  }
+
+  > h6 {
+    padding-top: 42px;
+    padding-bottom: 8px;
+  }
+
+  > p {
+    padding: 0px 100px;
+  }
+}
