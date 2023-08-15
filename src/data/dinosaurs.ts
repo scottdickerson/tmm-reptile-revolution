@@ -62,6 +62,24 @@ import torosaurusMap from "@/data/location-images/2x/Torosaurus@2x.webp";
 import trinacromerumMap from "@/data/location-images/2x/Trinacromerum@2x.webp";
 import tyrannosaurusMap from "@/data/location-images/2x/Tyrannosaurus@2x.webp";
 
+import alamosaurusSize from "@/data/sizes-images/2x/alamosaur@2x.webp";
+import basilemysSize from "@/data/sizes-images/2x/Basilemys@2x.webp";
+import bothriagenysSize from "@/data/sizes-images/2x/Bothriagenys@2x.webp";
+import coniophisSize from "@/data/sizes-images/2x/Coniophis@2x.webp";
+import deinosuchusSize from "@/data/sizes-images/2x/Deinosuchus@2x.webp";
+import gryposaurusSize from "@/data/sizes-images/2x/gryposaur@2x.webp";
+import ichthyornisSize from "@/data/sizes-images/2x/icthyornis@2x.webp";
+import libonectesSize from "@/data/sizes-images/2x/libonectes@2x.webp";
+import mosasaurusSize from "@/data/sizes-images/2x/mosasaurus@2x.webp";
+import pawpawsaurusSize from "@/data/sizes-images/2x/pawpawsaurus@2x.webp";
+import protostegaSize from "@/data/sizes-images/2x/Protostega@2x.webp";
+import quetzalcoatlusSize from "@/data/sizes-images/2x/quetzalcatlus@2x.webp";
+import saurornitholestesSize from "@/data/sizes-images/2x/Saurornitholestes@2x.webp";
+import scolomastaxSize from "@/data/sizes-images/2x/Scolomastax@2x.webp";
+import torosaurusSize from "@/data/sizes-images/2x/torosaur@2x.webp";
+import trinacromerumSize from "@/data/sizes-images/2x/trinacromerum@2x.webp";
+import tyrannosaurusSize from "@/data/sizes-images/2x/tyrannosaur@2x.webp";
+
 export interface Dinosaur {
   scientificName: string;
   characteristics: Characteristic[];
@@ -78,7 +96,7 @@ export interface Dinosaur {
     county: string;
     ageRange: string;
   };
-  size: string;
+  size: { image: StaticImageData; description: string };
   funFact1: { title: string; description: string };
   funFact2: string;
 }
@@ -123,7 +141,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists found an enormous fossilized sea turtle near Waco, Texas.",
       ageRange: "90-100 million years old",
     },
-    size: "Medium",
+    size: {
+      image: protostegaSize,
+      description:
+        "Protostega was a giant sea turtle that lived at the time of the dinosaurs. ",
+    },
     funFact1: {
       title: "Shovel-shaped",
       description:
@@ -167,7 +189,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists find fossils of these Cretaceous land turtles in western North America, including Texas.",
       ageRange: "72-84 million years old",
     },
-    size: "Medium",
+    size: {
+      image: basilemysSize,
+      description:
+        'Basilemys may have been the largest land turtle alive during the Late Cretaceous. Its name means "King Turtle."',
+    },
     funFact1: {
       title: "Land Dwellers",
       description:
@@ -212,7 +238,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists found tiny fossils of Cretaceous lizards in Big Bend National Park.",
       ageRange: "72-84 million years old",
     },
-    size: "Medium",
+    size: {
+      image: bothriagenysSize,
+      description:
+        "Bothriagenys was a little lizard that lived alongside its giant cousins, the dinosaurs!",
+    },
     funFact1: {
       title: "Little Lizards",
       description:
@@ -255,7 +285,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Like many early snakes, Coniophis had tiny back legs. Snakes evolved from lizard-like ancestors.",
       ageRange: "72-84 million years old",
     },
-    size: "Medium",
+    size: {
+      image: coniophisSize,
+      description:
+        "Scientists estimated this tiny snake's size by measuring a few individual vertebrae.",
+    },
     funFact1: {
       title: "That’s some back bone!",
       description:
@@ -301,7 +335,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Many types of extinct crocodiles lived in Cretaceous Texas, including Deinosuchus.",
       ageRange: "75-82 million years old",
     },
-    size: "Medium",
+    size: {
+      image: deinosuchusSize,
+      description:
+        "Deinosuchus was the largest carnivore in its ecosystem, its teeth were the size of bananas!",
+    },
     funFact1: {
       title: "High Steppin’",
       description:
@@ -347,7 +385,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Lots of now-extinct types of crocodiles lived in Cretaceous Texas, including Scolomastax.",
       ageRange: "95-100 million years old",
     },
-    size: "Medium",
+    size: {
+      image: scolomastaxSize,
+      description:
+        "Scolomastax was a cute little croc - about the size of a small dog.",
+    },
     funFact1: {
       title: "High Steppin’",
       description:
@@ -392,7 +434,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "One of the most famous Texas mosasaurs was discovered along Onion Creek in Austin.",
       ageRange: "66-72 million years old",
     },
-    size: "Medium",
+    size: {
+      image: mosasaurusSize,
+      description:
+        "The Onion Creek Mosasaur is huge, and it's not even the biggest one ever found.",
+    },
     funFact1: {
       title: "Suited for Swimming",
       description:
@@ -438,7 +484,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Libonectes was a long-necked plesiosaur that  swam in the shallow seas that once covered Texas.",
       ageRange: "92-95 million years old",
     },
-    size: "Medium",
+    size: {
+      image: libonectesSize,
+      description:
+        "Pleisosaurs came in many shapes and sizes. Libonectes morgani was a medium-sized plesiosaur.",
+    },
     funFact1: {
       title: "Don’t Call Me Dinosaur!",
       description:
@@ -483,7 +533,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "There were many different kinds of plesiosaurs. Trinacromerum had a shorter neck and longer snout.",
       ageRange: "89-93 million years old",
     },
-    size: "Medium",
+    size: {
+      image: trinacromerumSize,
+      description: "You can see Trinacromerum on the museum's first floor.",
+    },
     funFact1: {
       title: "Don’t Call Me Dinosaur!",
       description:
@@ -531,7 +584,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Quetzalcoatlus northropi was discovered by a University of Texas at Austin graduate student.",
       ageRange: "66-72 million years old",
     },
-    size: "Medium",
+    size: {
+      image: quetzalcoatlusSize,
+      description:
+        "Quetzalcoatlus northropi was one of the largest pterosaurs.",
+    },
     funFact1: {
       title: "Superpower?",
       description:
@@ -574,7 +631,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description: "Pawpawsaurus was discovered in 1992 by a teenager!",
       ageRange: "100-105 million years old",
     },
-    size: "Medium",
+    size: {
+      image: pawpawsaurusSize,
+      description:
+        "Scientists estimated Pawpawsaurus' sized based on the size of its skull - the only fossil found.",
+    },
     funFact1: {
       title: "Big-boned",
       description:
@@ -621,7 +682,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Torosaurus fossils were discovered in Big Bend National Park.",
       ageRange: "66-72 million years old",
     },
-    size: "Medium",
+    size: {
+      image: torosaurusSize,
+      description:
+        "The Big Bend Torosaur was a young adult and not yet at the maximum size for a Torosaur.",
+    },
     funFact1: {
       title: "Hardy Headgear",
       description:
@@ -666,7 +731,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists found Gryposaurus fossils in Big Bend National Park. Hadrosaur fossils are rare in this area, so the discovery is significant.",
       ageRange: "66-72 million years old",
     },
-    size: "Medium",
+    size: {
+      image: gryposaurusSize,
+      description: "The Big Bend Gryposaur was a very large adult.",
+    },
     funFact1: {
       title: "Extra-large Extroverts",
       description:
@@ -713,7 +781,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists have found fossilized teeth of Saurornitholestes in and around Big Bend National Park.",
       ageRange: "72-84 million years old",
     },
-    size: "Medium",
+    size: {
+      image: saurornitholestesSize,
+      description:
+        "Saurornitholestes was a smaller theropod, but it was still a fearsome predator.",
+    },
     funFact1: {
       title: "Two-legged Terrors",
       description:
@@ -761,7 +833,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Ichthyornis was a toothed seabird that could both fly and swim.",
       ageRange: "83.5 million years old",
     },
-    size: "Medium",
+    size: {
+      image: ichthyornisSize,
+      description: "Ichthyornis was about the size of a duck or a chicken.",
+    },
     funFact1: {
       title: "Feathered Fliers",
       description:
@@ -808,7 +883,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists have found fossils of Tyrannosaurus in Big Bend National Park.",
       ageRange: "66-72 million years old",
     },
-    size: "Big",
+    size: {
+      image: tyrannosaurusSize,
+      description:
+        "The Big Bend tyrannosaur is only about 30 feet long - maybe it's was a teenager.",
+    },
     funFact1: {
       title: "Two Steppin’!",
       description:
@@ -853,7 +932,11 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists found fossils of a massive Alamosaurus in Big Bend National Park.",
       ageRange: "66-70 million years old",
     },
-    size: "Medium",
+    size: {
+      image: alamosaurusSize,
+      description:
+        "The most famous Big Bend alamosaur was a gigantic full-sized adult.",
+    },
     funFact1: {
       title: "Explore More!",
       description:

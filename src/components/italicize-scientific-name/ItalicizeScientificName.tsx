@@ -9,8 +9,12 @@ export const ItalicizeScientificName = ({
 }: ItalicizeScientificNameProps) =>
   text.split(" ").map((word) =>
     scientificName.split(" ").includes(word) ||
-    scientificName.split(" ").find((namePart) => `${namePart}.` === word) ? (
-      <span key={word} className="italic">
+    scientificName
+      .split(" ")
+      .find(
+        (namePart) => `${namePart}.` === word || `${namePart}'` === word
+      ) ? (
+      <span key={word} className="italic m-1">
         {word}&nbsp;
       </span>
     ) : (

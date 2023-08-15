@@ -23,8 +23,8 @@ export const DinosaurLocationMap = ({ dinosaur }: DinosaurLocationProps) => {
       <div className="dinosaurGridRow dinosaurGridEvenRow">
         {dinosaur.location.county}
       </div>
-      <div className="dinosaurGridRow dinosaurGridOddRow">Scientific name</div>
-      <div className="dinosaurGridRow dinosaurGridOddRow italicized">
+      <div className="dinosaurGridRow">Scientific name</div>
+      <div className="dinosaurGridRow italicized">
         {dinosaur.scientificName}
       </div>
       <div className="dinosaurGridRow dinosaurGridEvenRow">Age range</div>
