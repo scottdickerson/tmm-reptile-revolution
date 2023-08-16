@@ -50,7 +50,8 @@ export default function Results({
         )} items-center flex-grow`}
       >
         {(category === ResultCategory.SUMMARY ||
-          category === ResultCategory.TIME) && (
+          category === ResultCategory.TIME ||
+          category === ResultCategory.FUN_FACT_1) && (
           <Image src={dinosaur.image} alt={dinosaur.summary.title} />
         )}
         {category === ResultCategory.SUMMARY && (

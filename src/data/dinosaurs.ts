@@ -763,7 +763,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Hardy Headgear",
       description:
-        'Horned dionsaurs all have a bony "frill" at the back of their skulls, horns set behind their eyes, and a specialized beak.',
+        'Horned dinosaurs all have a bony "frill" at the back of their skulls, horns set behind their eyes, and a specialized beak.',
     },
     funFact2: {
       image: torosaurusFunFact2,
@@ -822,7 +822,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: gryposaurusFunFact2,
       title: "Hook-nosed Lizard",
       description:
-        'Hadro is Greek for "hooked nose." You can see its large nasal arch clearly in the mural to your right.',
+        'Grypo is Greek for "hooked nose." You can see its large nasal arch clearly in the mural to your right.',
     },
   },
   therapodSmall: {
@@ -1091,3 +1091,13 @@ export const findBestMatchingDinosaur = (
 
   return dinoWithMostMatchingCharacteristics.dinoName;
 };
+
+export const scientificNames = Object.values(dinosaurs)
+  .map((dinosaur) => dinosaur.scientificName)
+  .concat([
+    "torosaur",
+    "gryposaur",
+    "Agujaceratops",
+    "Triceratops",
+    "torosaurs",
+  ]);

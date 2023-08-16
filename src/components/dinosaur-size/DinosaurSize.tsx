@@ -12,10 +12,9 @@ export const DinosaurSize = ({ dinosaur }: DinosaurSizeProps) => {
     <div className="dinosaurSize">
       <Image src={dinosaur.size.image} alt="size" />
       <p className="dinosaurTimeDescription">
-        <ItalicizeScientificName
-          text={dinosaur.size.description}
-          scientificName={dinosaur.scientificName}
-        />
+        <ItalicizeScientificName>
+          {dinosaur.size.description}
+        </ItalicizeScientificName>
       </p>
     </div>
   );

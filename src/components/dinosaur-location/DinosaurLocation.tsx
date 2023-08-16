@@ -43,10 +43,9 @@ export const DinosaurLocation = ({ dinosaur }: DinosaurLocationProps) => {
         <div className="dinosaurLocationFossilSection">
           <Image src={dinosaur.location.imageFossil} alt="fossil" />
           <p className="dinosaurTimeDescription dinosaurLocationDescription">
-            <ItalicizeScientificName
-              text={dinosaur.location.description}
-              scientificName={dinosaur.scientificName}
-            />
+            <ItalicizeScientificName>
+              {dinosaur.location.description}
+            </ItalicizeScientificName>
           </p>
         </div>
       </div>

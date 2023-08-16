@@ -10,10 +10,9 @@ export const DinosaurFunFact2 = ({ dinosaur }: { dinosaur: Dinosaur }) => {
       <Image src={dinosaur.funFact2.image} alt="fun fact 2" />
       <h6 className="dinosaurFunFact1Title">{dinosaur.funFact2.title}</h6>
       <p className="dinosaurTimeDescription">
-        <ItalicizeScientificName
-          text={dinosaur.funFact2.description}
-          scientificName={dinosaur.scientificName}
-        ></ItalicizeScientificName>
+        <ItalicizeScientificName>
+          {dinosaur.funFact2.description}
+        </ItalicizeScientificName>
       </p>
     </div>
   );
