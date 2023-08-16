@@ -202,7 +202,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: turtleLandTime,
       description:
-        "Turtles emerged millions of years before the dinosaurs and are still part of animal communities across the world.",
+        "The earliest turtles had flattened ribs and rigid hip bones, but lacked top shells.",
     },
     location: {
       imageFossil: turtleLandFossil,
@@ -274,7 +274,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Little Lizards",
       description:
-        "Today some lizards, like the komodo dragon, are huge. But, the first lizards were pretty tiny.",
+        "Today some lizards, like the Komodo dragon, are huge. The first lizards were pretty tiny.",
     },
     funFact2: {
       image: bothriagenysFunFact2,
@@ -287,7 +287,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re a snake!",
       description:
-        "Snakes may have no legs, but they get around just fine. Their streamlined bodies can fit into all types of tight spots.",
+        "Snakes may have no legs, but they get around just fine. Their flexible bodies can fit into all types of tight spots.",
     },
     scientificName: "Coniophis",
     characteristics: [
@@ -308,7 +308,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: snakeTime,
       description:
-        "Snakes evolved from lizard like ancestors during the Middle Jurassic and they are still part of animal communities across the world.",
+        "Snakes evolved from lizard-like ancestors during the Middle Jurassic and they are still part of animal communities across the world.",
     },
     location: {
       imageFossil: snakeFossil,
@@ -324,22 +324,22 @@ export const dinosaurs: Record<string, Dinosaur> = {
         "Scientists estimated this tiny snake's size by measuring a few individual vertebrae.",
     },
     funFact1: {
-      title: "That’s some back bone!",
+      title: "That’s some backbone!",
       description:
-        "Snakes' long bodies have more vertebrae (individual back bones), than most other animals. You have 33 vertebrae, but the average snake has over 200!",
+        "A snake’s long body has more vertebrae (individual back bones), than most other animals. You have 33 vertebrae, but the average snake has over 200!",
     },
     funFact2: {
       image: coniophisFunFact2,
       title: "Asteroid Survivors!",
       description:
-        "Unlike most of their reptile relatives, some snakes like Coniophis survived the massive extinction event at the end of the Cretaceous. ",
+        "Unlike their reptile relatives, some snakes like Coniophis survived the mass extinction event at the end of the Cretaceous. ",
     },
   },
   crocodileLarge: {
     summary: {
       title: "You’re a crocodile!",
       description:
-        "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and even little caimans.",
+        "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and caimans.",
     },
     scientificName: "Deinosuchus riograndensis",
     characteristics: [
@@ -370,18 +370,18 @@ export const dinosaurs: Record<string, Dinosaur> = {
       imageMap: deinosuchusMap,
       county: "Brewster County",
       description:
-        "Many types of extinct crocodiles lived in Cretaceous Texas, including Deinosuchus.",
+        "Many types of extinct crocodiles lived in Cretaceous Texas, including alligator-like Deinosuchus.",
       ageRange: "75-82 million years old",
     },
     size: {
       image: deinosuchusSize,
       description:
-        "Deinosuchus was the largest carnivore in its ecosystem, its teeth were the size of bananas!",
+        "Deinosuchus was the largest carnivore in its ecosystem. Its teeth were the size of bananas!",
     },
     funFact1: {
       title: "High Steppin’",
       description:
-        'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move pretty quickly over rocks and vegetation.',
+        'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move quickly over rocks and vegetation.',
     },
     funFact2: {
       image: deinosuchusFunFact2,
@@ -394,7 +394,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re a crocodile!",
       description:
-        "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and even little caimans.",
+        "Along with birds, crocodiles are the only surviving archosaurs – the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and caimans.",
     },
     scientificName: "Scolomastax sahlsteini",
     characteristics: [
@@ -436,20 +436,20 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "High Steppin’",
       description:
-        'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move pretty quickly over rocks and vegetation.',
+        'Crocodiles can use their strong legs to stand up high enough to keep their bellies from touching the ground. This "high walk" ability means they can move quickly over rocks and vegetation.',
     },
     funFact2: {
       image: scolomastaxFunFact2,
-      title: "Crocodile Crew",
+      title: "Crocodile Crunch",
       description:
-        "Like the modern-day Caiman (shown above), Scolomastax had a shorter snout than many of its crocodile cousins. During the Cretaceous, there were many more types of crocs than today.",
+        "Like a young modern-day caiman, Scolomastax had shorter jaws than many of its crocodile cousins. Scientists think Scolomastax ate animals with hard exoskeletons like snails and insects.",
     },
   },
   mosasaur: {
     summary: {
       title: "You’re a mosasaur!",
       description:
-        "These enormous, swimming reptiles ruled the ancient oceans, but they were not dinosaurs. They were part of the lizard and snake family.",
+        "These enormous swimming reptiles ruled the ancient oceans, but they were not dinosaurs. They were part of the lizard and snake family.",
     },
     scientificName: "Mosasaurus hoffmannii",
     characteristics: [
@@ -490,13 +490,13 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Suited for Swimming",
       description:
-        "Mosasaurs  streamlined bodies and paddle-like limbs were well adapted to life in the water. However, their powerful tails were their strongest advantage - providing massive thrust and making them the fastest swimmers of their time.",
+        "Mosasaurs’ streamlined bodies and paddle-like limbs were well adapted to life in the water. However, their powerful tails were their strongest advantage – providing massive thrust and making them the fastest swimmers of their time.",
     },
     funFact2: {
       image: mosasaurusFunFact2,
       title: "Local Lizard",
       description:
-        "Scientists reconstructed its skeleton which is now displayed on the museum's first floor.",
+        " Scientists reconstructed its skeleton, now displayed on the museum’s first floor.",
     },
   },
   plesiosaurLongNeck: {
@@ -505,7 +505,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description:
         "Plesiosaurs were a family of swimming reptiles. They were great swimmers with a taste for seafood.",
     },
-    scientificName: "Libonectes",
+    scientificName: "Libonectes morgani",
     characteristics: [
       Characteristic.WATER_ALWAYS,
       Characteristic.PLAIN_LOOK,
@@ -527,14 +527,14 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: plesiosaurLongNeckTime,
       description:
-        "Plesiosaurs appeared during the Late Triassic. None survived the massive extinction event at the end of the Cretaceous.",
+        "Plesiosaurs appeared during the Late Triassic. None survived the mass extinction event at the end of the Cretaceous.",
     },
     location: {
       imageFossil: plesiosaurLongNeckFossil,
       imageMap: libonectesMap,
       county: "Dallas County",
       description:
-        "Libonectes was a long-necked plesiosaur that  swam in the shallow seas that once covered Texas.",
+        "Many long-necked plesiosaurs like Libonectes had a gizzard full of stones that helped them mash up the ammonites and fish they ate.",
       ageRange: "92-95 million years old",
     },
     size: {
@@ -551,7 +551,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: libonectesFunFact2,
       title: "Southern Swimmer",
       description:
-        'Libonectes\'s name is Greek for "southern swimmer," because fossils have been found in Texas and other southern parts of the United States.',
+        'Libonectes\'s name is Greek for "southern swimmer," because the earliest fossil finds were in Texas and other southern parts of the United States.',
     },
   },
   plesiosaurShortNeck: {
@@ -581,7 +581,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: plesiosaurShortNeckTime,
       description:
-        "Plesiosaurs appeared during the Late Triassic. None survived the massive extinction event at the end of the Cretaceous.",
+        "Plesiosaurs appeared during the Late Triassic. None survived the mass extinction event at the end of the Cretaceous.",
     },
     location: {
       imageFossil: plesiosaurShortNeckFossil,
@@ -604,7 +604,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: trinacromerumFunFact2,
       title: "See, food!",
       description:
-        'Trinacromerum ate its dinner whole. Scientists have found fossilized gastropods "inside" these plesiosaurs.',
+        "Trinacromerum ate its dinner whole. Scientists have found fossil evidence these plesiosaurs swallowed whole ammonites.",
     },
   },
 
@@ -613,7 +613,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re a pterosaur!",
       description:
-        "Pterosaurs were a family of flying reptiles. They came in lots of shapes and sizes.",
+        "Pterosaurs were a family of flying reptiles. They came in many shapes and sizes.",
     },
     scientificName: "Quetzalcoatlus northropi",
     characteristics: [
@@ -637,7 +637,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: pterosaurTime,
       description:
-        "Pterosaurs glided along for over a hundred million years, but none survived the end-Cretaceous extinction event.",
+        "Pterosaurs flapped along for over a hundred million years, but none survived the end-Cretaceous extinction event.",
     },
     location: {
       imageFossil: pterosaurFossil,
@@ -668,9 +668,9 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re an armored dinosaur! ",
       description:
-        'Armored dinosaurs form the family group thyreophora - which means "shield bearers." They were a diverse group including all the ankylosaurs and stegosaurs.',
+        'Armored dinosaurs form the family group Thyreophora - which means "shield bearers." They were a diverse group including all the ankylosaurs and stegosaurs.',
     },
-    scientificName: "Pawpawsaurus",
+    scientificName: "Pawpawsaurus campbelli",
     characteristics: [
       Characteristic.LAND_LOVER,
       Characteristic.SPIKES,
@@ -702,25 +702,25 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: pawpawsaurusSize,
       description:
-        "Scientists estimated Pawpawsaurus' sized based on the size of its skull - the only fossil found.",
+        "Scientists estimated Pawpawsaurus' sized based on the size of its skull – the only fossil found.",
     },
     funFact1: {
-      title: "Big-boned",
+      title: "Protective Plates",
       description:
-        'These dino\'s "armor" is formed by bony deposits that create hard protective plates over their bodies - probably as a defense against predators. Because the armor was made of bone, it survives in fossil form, allowing us to learn about these big-boned beasties!',
+        "The “armor” on these dinosaurs is formed by protective plates in the skin. Because the plates were bony, they were easily fossilized, allowing us to learn about these broad-boned beasts!",
     },
     funFact2: {
       image: pawpawsaurusFunFact2,
       title: "Safety First",
       description:
-        "Like other armored dinosaurs, Pawpawsaurus had a special bone near its eye socket. Its bony eyelid may have worked like safety goggles to protect its eyes in a scuffle.",
+        "Like many armored dinosaurs, Pawpawsaurus had a special bone near its eye socket. Its bony eyelid may have worked like safety goggles to protect its eyes in a scuffle.",
     },
   },
   hornedDinosaur: {
     summary: {
       title: "You’re a horned dinosaur! ",
       description:
-        'Horned dinosaurs form the family group ceratopsia - which means "horned face." Triceratops is the most famous (but not the only) family member.',
+        'Horned dinosaurs form the family group Ceratopsia - which means "horned face." Triceratops is the most famous (but not the only) family member.',
     },
     scientificName: "Torosaurus utahensis",
     characteristics: [
@@ -758,7 +758,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: torosaurusSize,
       description:
-        "The Big Bend Torosaur was a young adult and not yet at the maximum size for a Torosaur.",
+        "The Big Bend Torosaurus was a young adult and not yet at the maximum size for a Torosaurus.",
     },
     funFact1: {
       title: "Hardy Headgear",
@@ -769,14 +769,14 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: torosaurusFunFact2,
       title: "Toro Trio",
       description:
-        "You can see three Torosaurs in the mural to your left. You can also see a fossilized skull on the museum's first floor.",
+        "You can see three torosaurs in the mural to your left. You can see the skull of Agujaceratops, another Texas horned dinosaur, on the museum’s first floor.",
     },
   },
   duckbillDinosaur: {
     summary: {
       title: "You’re a duckbill dinosaur! ",
       description:
-        'Duckbill dinosaurs form the family group hadrosauridae - which means "stout lizard." They have flat snouts and large, rounded bodies.',
+        'Duckbill dinosaurs form the family group Hadrosauridae - which means "stout lizard." They have flat snouts and large, rounded bodies.',
     },
     scientificName: "Gryposaurus alsatei",
     characteristics: [
@@ -811,7 +811,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     size: {
       image: gryposaurusSize,
-      description: "The Big Bend Gryposaur was a very large adult.",
+      description: "The Big Bend Gryposaurus was a very large adult.",
     },
     funFact1: {
       title: "Extra-large Extroverts",
@@ -872,20 +872,20 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Two-legged Terrors",
       description:
-        "These dinosaurs were meat-eaters with blade-like serrated teeth. They could chase after their prey on two legs and evolved relatively large hands with grasping ability. Some non-avian theropods had feathers like their relatives, the birds.",
+        "These dinosaurs were meat-eaters with blade-like serrated teeth. With strong hind legs they chased after their prey and evolved relatively large hands with grasping ability. Some non-avian theropods had feathers like their relatives, the birds.",
     },
     funFact2: {
       image: saurornitholestesFunFact2,
       title: "Pearly Whites",
       description:
-        "Just like other reptiles, Saurornitholestes could grow a new teeth again and again to replace a worn ones. In the Big Bend, scientists found these fossilized teeth around the sites of ancient lakes and streams. Maybe this little theropod preferred to live in wetter habitats.",
+        "Just like other reptiles, Saurornitholestes could grow new teeth again and again to replace worn ones. In the Big Bend, scientists found these fossilized teeth around the sites of ancient lakes and streams. Maybe this little theropod preferred to live in wetter habitats.",
     },
   },
   bird: {
     summary: {
       title: "You’re a bird! ",
       description:
-        "Birds are a branch of the theropod dinosaur family. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
+        "Birds are a branch of the theropod dinosaur family tree. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
     },
     scientificName: "Ichthyornis",
     characteristics: [
@@ -923,12 +923,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     size: {
       image: ichthyornisSize,
-      description: "Ichthyornis was about the size of a duck or a chicken.",
+      description: "Ichthyornis was about the size of a small duck.",
     },
     funFact1: {
       title: "Feathered Fliers",
       description:
-        "Other theropods had feathers, but couldn't fly. While some other dinosaurs may have even had wing-like forelimbs, true birds were the first dinosaurs to evolve sustained powered flight.",
+        "Many theropods had feathers, but couldn’t fly. While some other theropods may have had wing-like forelimbs, true birds were the first dinosaurs to evolve sustained powered flight.",
     },
     funFact2: {
       image: ichthyornisFunFact2,
@@ -978,7 +978,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: tyrannosaurusSize,
       description:
-        "The Big Bend tyrannosaur is only about 30 feet long - maybe it's was a teenager.",
+        "One of the Big Bend tyrannosaurs is estimated to be about 30 feet long – maybe it was a teenager!",
     },
     funFact1: {
       title: "Two Steppin’!",
@@ -989,7 +989,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: tyrannosaurusFunFact2,
       title: "Head Hunter",
       description:
-        "In the mural to your right, you can see the Texas tyrannosaur catching a Gryposaurus with its sharp teeth.",
+        "In the mural to your right, you can see a Texas tyrannosaur catching a Gryposaurus with its sharp teeth.",
     },
   },
   sauropod: {
@@ -1043,7 +1043,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: alamosaurusFunFact2,
       title: "Pinkie Promise",
       description:
-        "Sauropods had a fifth toe, like a human pinkie toe. This toe was long and helped support sauropods immense weight. In fact, sauropods were the largest creatures ever to live on land.",
+        "Sauropods had a fifth toe, like a human pinkie toe. All five toes touched the ground to help support the sauropod’s immense weight. Sauropods were the largest creatures ever to live on land!",
     },
   },
 };
@@ -1095,9 +1095,10 @@ export const findBestMatchingDinosaur = (
 export const scientificNames = Object.values(dinosaurs)
   .map((dinosaur) => dinosaur.scientificName)
   .concat([
-    "torosaur",
-    "gryposaur",
     "Agujaceratops",
     "Triceratops",
-    "torosaurs",
+    "hadrosauridae",
+    "Triceratops",
+    "Ceratopsia",
+    "Thyreophora",
   ]);
