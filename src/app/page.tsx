@@ -26,8 +26,8 @@ export default function Home() {
         <CenterEllipsis>
           <h1 className="titleText">Reptile Revolution</h1>
           <p className="titleDescription">
-            Cretaceous reptiles came in all shapes and sizes. Which one would
-            you be?
+            Cretaceous reptiles came in all shapes and sizes.<br></br> Which one
+            would you be?
           </p>
           <Button>Play!</Button>
         </CenterEllipsis>

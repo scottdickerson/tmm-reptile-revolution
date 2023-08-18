@@ -15,7 +15,7 @@ export const Button = ({
 }: PropsWithChildren<ButtonProps>) => (
   <button
     style={{ width }}
-    className={`h-20 rounded-full button px-16 ${className}`}
+    className={`h-24 rounded-full button px-16 ${className}`}
     onClick={onClick}
   >
     {children}

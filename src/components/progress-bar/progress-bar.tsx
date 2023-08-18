@@ -11,7 +11,7 @@ export const ProgressBar = ({ current }: ProgressBarProps) => {
   const questionArray = Array(QUESTION_COUNT).fill(0);
 
   return (
-    <div className="flex flex-row gap-3 items-end">
+    <div className="flex flex-row gap-3 items-end absolute bottom-12">
       {questionArray.map((_, index) => {
         const isFilled = current >= index;
         return (

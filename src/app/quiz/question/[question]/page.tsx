@@ -35,8 +35,14 @@ export default function Quiz({ params }: { params: { question: string } }) {
   return (
     // The context will always be different from the server slug
     <div suppressHydrationWarning className="flex flex-col items-center h-full">
-      <div className="flex flex-col items-center h-full justify-center">
-        <CenterEllipsis gap={30} padding="75px 10px 0px" height={681}>
+      <div className="flex flex-col items-center h-full justify-center relative">
+        <CenterEllipsis
+          gap={isTextQuestion(currentQuestion) ? 30 : 35}
+          padding={`${
+            isTextQuestion(currentQuestion) ? "40px" : "10px"
+          } 10px 90px`}
+          height={681}
+        >
           {isTextQuestion(currentQuestion) ? (
             <TextQuestion question={currentQuestion} onAnswer={handleAnswer} />
           ) : (
