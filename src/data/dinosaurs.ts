@@ -96,7 +96,7 @@ import coniophisFunFact2 from "@/data/fun-fact2-images/2x/coniophis@2x.webp";
 import deinosuchusFunFact2 from "@/data/fun-fact2-images/2x/deinosuchus@2x.webp";
 import gryposaurusFunFact2 from "@/data/fun-fact2-images/2x/Gryposaurus@2x.webp";
 import ichthyornisFunFact2 from "@/data/fun-fact2-images/2x/Ichthyornis@2x.webp";
-import libonectesFunFact2 from "@/data/fun-fact2-images/2x/libonectesFunFact2.svg";
+import libonectesFunFact2 from "@/data/fun-fact2-images/2x/Libonectes@2x.webp";
 import mosasaurusFunFact2 from "@/data/fun-fact2-images/2x/Mosasaurus@2x.webp";
 import pawpawsaurusFunFact2 from "@/data/fun-fact2-images/2x/Pawpawsaurus@2x.webp";
 import protostegaFunFact2 from "@/data/fun-fact2-images/2x/Protostega@2x.webp";
