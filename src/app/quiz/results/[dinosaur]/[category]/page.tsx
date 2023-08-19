@@ -78,10 +78,10 @@ export default function Results({
             )}
           </DinosaursResultsSecondFrame>
         )}
-        <h2 className="text-lg absolute top-0 left-0">
+        {/* <h2 className="text-lg absolute top-0 left-0">
           Player selected characteristics:
           {JSON.stringify(characteristics, null, 2)}
-        </h2>
+        </h2> */}
       </div>
       <DinosaurSwitcher />
     </div>

@@ -10,19 +10,19 @@ import hornedDinosaur from "@/data/dinosaur-images/torosaur_comp.gif";
 import lizard from "@/data/dinosaur-images/lizard_comp.gif";
 import mosasaur from "@/data/dinosaur-images/mosasaur.gif";
 import plesiosaur from "@/data/dinosaur-images/plesiosaur_comp.gif";
-import pterosaur from "@/data/dinosaur-images/pterosaur_2.gif";
+import pterosaur from "@/data/dinosaur-images/pterosaur.gif";
 import seaTurtle from "@/data/dinosaur-images/seaTurtle.gif";
 import snake from "@/data/dinosaur-images/snake.gif";
-import therapodLarge from "@/data/dinosaur-images/therapod_lrg.gif";
-import therapodSmall from "@/data/dinosaur-images/theropodSmall.gif";
+import theropodLarge from "@/data/dinosaur-images/therapod_lrg.gif";
+import theropodSmall from "@/data/dinosaur-images/theropodSmall.gif";
 import landTurtle from "@/data/dinosaur-images/turtle(land)_comp.gif";
 
 import hornedDinosaurTime from "@/data/timeline-images/horned-dinosaur-time.gif";
 import turtleSeaTime from "@/data/timeline-images/turtle-sea-time.gif";
 import sauropodTime from "@/data/timeline-images/sauropod-time.gif";
-import therapodLargeTime from "@/data/timeline-images/therapod-large-time.gif";
+import theropodLargeTime from "@/data/timeline-images/therapod-large-time.gif";
 import birdTime from "@/data/timeline-images/bird-time.gif";
-import therapodSmallTime from "@/data/timeline-images/therapod-small-time.gif";
+import theropodSmallTime from "@/data/timeline-images/therapod-small-time.gif";
 import duckbillDinosaurTime from "@/data/timeline-images/duckbill-dinosaur-time.gif";
 import armoredDinosaurTime from "@/data/timeline-images/armored-dinosaur-time.gif";
 import crocodileLargeTime from "@/data/timeline-images/crocodile-large-time.gif";
@@ -48,9 +48,9 @@ import pterosaurFossil from "@/data/fossil-images/2x/Quetzalcoatlus northropi@2x
 import armoredDinosaurFossil from "@/data/fossil-images/2x/Armored Dino@2x.webp";
 import hornedDinosaurFossil from "@/data/fossil-images/2x/Horned Dinosaur@2x.webp";
 import duckbillDinosaurFossil from "@/data/fossil-images/2x/Duckbill Dinosaur@2x.webp";
-import therapodSmallFossil from "@/data/fossil-images/2x/Theropod (small)@2x.webp";
+import theropodSmallFossil from "@/data/fossil-images/2x/Theropod (small)@2x.webp";
 import birdFossil from "@/data/fossil-images/2x/Bird@2x.webp";
-import therapodLargeFossil from "@/data/fossil-images/2x/Theropod (large)@2x.webp";
+import theropodLargeFossil from "@/data/fossil-images/2x/Theropod (large)@2x.webp";
 import sauropodFossil from "@/data/fossil-images/2x/Sauropod@2x.webp";
 
 import alamosaurusMap from "@/data/location-images/2x/Alamosaurus@2x.webp";
@@ -182,7 +182,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: protostegaFunFact2,
       title: "Texas Treasure",
       description:
-        "Today, parts of this fossilized sea turtle are on display on the Museum's first floor.",
+        "Today, parts of this fossilized sea turtle are on display on the museum’s first floor.",
     },
   },
   turtleLand: {
@@ -211,7 +211,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: turtleLandTime,
       description:
-        "The earliest turtles had flattened ribs and rigid hip bones, but lacked top shells.",
+        "The earliest turtles had flattened ribs and rigid hip bones but lacked top shells.",
     },
     location: {
       imageFossil: turtleLandFossil,
@@ -235,7 +235,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: basilemysFunFact2,
       title: "Land Lover",
       description:
-        "Like today's tortoises (shown above),  Basilemys lived on land and munched on vegetation.",
+        "Like today’s tortoises (shown above),  Basilemys lived on land and munched on vegetation.",
     },
   },
   lizard: {
@@ -317,7 +317,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: snakeTime,
       description:
-        "Snakes evolved from lizard-like ancestors during the Middle Jurassic and they are still part of animal communities across the world.",
+        "Snakes evolved from lizard-like ancestors during the Middle Jurassic, and they are still part of animal communities across the world.",
     },
     location: {
       imageFossil: snakeFossil,
@@ -330,7 +330,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: coniophisSize,
       description:
-        "Scientists estimated this tiny snake's size by measuring a few individual vertebrae.",
+        "Scientists estimated this tiny snake’s size by measuring a few individual vertebrae.",
     },
     funFact1: {
       title: "That’s some backbone!",
@@ -348,7 +348,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re a crocodile!",
       description:
-        "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and caimans.",
+        "Along with birds, crocodiles are the only surviving archosaurs - the reptile group that includes dinosaurs. These snappy-jawed reptiles include today’s crocodiles, alligators, and caimans.",
     },
     scientificName: "Deinosuchus riograndensis",
     characteristics: [
@@ -372,7 +372,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: crocodileLargeTime,
       description:
-        "Crocodiles emerged during the early Jurassic and they are still part of animal communities across the world.",
+        "Crocodiles emerged during the Early Jurassic, and they are still part of animal communities across the world.",
     },
     location: {
       imageFossil: crocodileLargeFossil,
@@ -396,14 +396,14 @@ export const dinosaurs: Record<string, Dinosaur> = {
       image: deinosuchusFunFact2,
       title: "Dino Diner",
       description:
-        "Deinosuchus was not a dinosaur, but during its time it was the most fearsome predator. With a mouth full of enormous teeth, Deinosuchus was large enough to tackle dinosaurs that came to the water's edge for a drink.",
+        "Deinosuchus was not a dinosaur, but during its time it was the most fearsome predator. With a mouth full of enormous teeth, Deinosuchus was large enough to tackle dinosaurs that came to the water’s edge for a drink.",
     },
   },
   crocodile: {
     summary: {
       title: "You’re a crocodile!",
       description:
-        "Along with birds, crocodiles are the only surviving archosaurs – the reptile group that includes dinosaurs. These snappy-jawed reptiles include today's crocodiles, alligators, and caimans.",
+        "Along with birds, crocodiles are the only surviving archosaurs — the reptile group that includes dinosaurs. These snappy-jawed reptiles include today’s crocodiles, alligators, and caimans.",
     },
     scientificName: "Scolomastax sahlsteini",
     characteristics: [
@@ -427,7 +427,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: crocodileSmallTime,
       description:
-        "Crocodiles emerged during the early Jurassic and they are still part of animal communities across the world.",
+        "Crocodiles emerged during the Early Jurassic, and they are still part of animal communities across the world.",
     },
     location: {
       imageFossil: crocodileSmallFossil,
@@ -440,7 +440,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: scolomastaxSize,
       description:
-        "Scolomastax was a cute little croc - about the size of a small dog.",
+        "Scolomastax was a cute little croc — about the size of a small dog.",
     },
     funFact1: {
       title: "High Steppin’",
@@ -481,7 +481,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       image: mosasaurTime,
       description:
-        "Mosasaurs came along relatively late in the game. They emerged in the Late Cretaceous and did not survive the extinction event.",
+        "Mosasaurs came along relatively late in the game. They emerged in the Late Cretaceous and did not survive the mass extinction event.",
     },
     location: {
       imageFossil: mosasaurFossil,
@@ -494,12 +494,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: mosasaurusSize,
       description:
-        "The Onion Creek Mosasaur is huge, and it's not even the biggest one ever found.",
+        "The Onion Creek Mosasaur is huge, and it’s not even the biggest one ever found.",
     },
     funFact1: {
       title: "Suited for Swimming",
       description:
-        "Mosasaurs’ streamlined bodies and paddle-like limbs were well adapted to life in the water. However, their powerful tails were their strongest advantage – providing massive thrust and making them the fastest swimmers of their time.",
+        "Mosasaurs’ streamlined bodies and paddle-like limbs were well adapted to life in the water. However, their powerful tails were their strongest advantage — providing massive thrust and making them the fastest swimmers of their time.",
     },
     funFact2: {
       image: mosasaurusFunFact2,
@@ -554,13 +554,13 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Don’t Call Me Dinosaur!",
       description:
-        "Plesiosaurs weren't dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
+        "Plesiosaurs weren’t dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
     },
     funFact2: {
       image: libonectesFunFact2,
       title: "Southern Swimmer",
       description:
-        'Libonectes\'s name is Greek for "southern swimmer," because the earliest fossil finds were in Texas and other southern parts of the United States.',
+        'Libonectes’s name is Greek for "southern swimmer," because the earliest fossil finds were in Texas and other southern parts of the United States.',
     },
   },
   plesiosaurShortNeck: {
@@ -602,12 +602,12 @@ export const dinosaurs: Record<string, Dinosaur> = {
     },
     size: {
       image: trinacromerumSize,
-      description: "You can see Trinacromerum on the museum's first floor.",
+      description: "You can see Trinacromerum on the museum’s first floor.",
     },
     funFact1: {
       title: "Don’t Call Me Dinosaur!",
       description:
-        "Plesiosaurs weren't dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
+        "Plesiosaurs weren’t dinosaurs. They were swimming reptiles that evolved from earlier land-based ancestors. They used their paddle-shaped front and hind limbs to propel themselves through ancient seas.",
     },
     funFact2: {
       image: trinacromerumFunFact2,
@@ -677,7 +677,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re an armored dinosaur! ",
       description:
-        'Armored dinosaurs form the family group Thyreophora - which means "shield bearers." They were a diverse group including all the ankylosaurs and stegosaurs.',
+        'Armored dinosaurs form the family group Thyreophora — which means "shield bearers." They were a diverse group including all the ankylosaurs and stegosaurs.',
     },
     scientificName: "Pawpawsaurus campbelli",
     characteristics: [
@@ -711,7 +711,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: pawpawsaurusSize,
       description:
-        "Scientists estimated Pawpawsaurus' sized based on the size of its skull – the only fossil found.",
+        "Scientists estimated Pawpawsaurus’ sized based on the size of its skull — the only fossil found.",
     },
     funFact1: {
       title: "Protective Plates",
@@ -729,7 +729,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re a horned dinosaur! ",
       description:
-        'Horned dinosaurs form the family group Ceratopsia - which means "horned face." Triceratops is the most famous (but not the only) family member.',
+        'Horned dinosaurs form the family group Ceratopsia — which means "horned face." Triceratops is the most famous (but not the only) family member.',
     },
     scientificName: "Torosaurus utahensis",
     characteristics: [
@@ -753,7 +753,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     image: hornedDinosaur,
     time: {
       description:
-        "Horned Dinos evolved in the Late Cretaceous, making them one of the last types of dinosaurs to appear before the extinction event.",
+        "Horned dinos evolved in the Late Cretaceous, making them one of the last types of dinosaurs to appear before the extinction event.",
       image: hornedDinosaurTime,
     },
     location: {
@@ -785,7 +785,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     summary: {
       title: "You’re a duckbill dinosaur! ",
       description:
-        'Duckbill dinosaurs form the family group Hadrosauridae - which means "stout lizard." They have flat snouts and large, rounded bodies.',
+        'Duckbill dinosaurs form the family group Hadrosauridae — which means "stout lizard." They have flat snouts and large, rounded bodies.',
     },
     scientificName: "Gryposaurus alsatei",
     characteristics: [
@@ -834,9 +834,9 @@ export const dinosaurs: Record<string, Dinosaur> = {
         'Grypo is Greek for "hooked nose." You can see its large nasal arch clearly in the mural to your right.',
     },
   },
-  therapodSmall: {
+  theropodSmall: {
     summary: {
-      title: "You’re a small therapod! ",
+      title: "You’re a small theropod! ",
       description:
         "Theropods are a diverse group.These two-legged terrors came in all sizes and eventually included birds. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
     },
@@ -859,14 +859,14 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.BALANCED_BODY,
       Characteristic.RUN,
     ],
-    image: therapodSmall,
+    image: theropodSmall,
     time: {
       description:
         "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
-      image: therapodSmallTime,
+      image: theropodSmallTime,
     },
     location: {
-      imageFossil: therapodSmallFossil,
+      imageFossil: theropodSmallFossil,
       imageMap: saurornitholestesMap,
       county: "Brewster County",
       description:
@@ -919,7 +919,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     image: bird,
     time: {
       description:
-        "Avian theropods emerged in the Early Cretaceous and they are still part of animal communities around the world.",
+        "Avian theropods emerged in the Early Cretaceous, and they are still part of animal communities around the world.",
       image: birdTime,
     },
     location: {
@@ -937,7 +937,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Feathered Fliers",
       description:
-        "Many theropods had feathers, but couldn’t fly. While some other theropods may have had wing-like forelimbs, true birds were the first dinosaurs to evolve sustained powered flight.",
+        "Many theropods had feathers but couldn’t fly. While some other theropods may have had wing-like forelimbs, true birds were the first dinosaurs to evolve sustained powered flight.",
     },
     funFact2: {
       image: ichthyornisFunFact2,
@@ -945,10 +945,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
       description: "Ichthyornis (and other early birds) had teeth!",
     },
   },
-  therapodLarge: {
-    image: therapodLarge,
+  theropodLarge: {
+    image: theropodLarge,
     summary: {
-      title: "You’re a large therapod!",
+      title: "You’re a large theropod!",
       description:
         "Theropods are a diverse group.These two-legged terrors came in all sizes and eventually included birds. Scientists distinguish between theropods that are birds (avians) and theropods that were not (non-avian).",
     },
@@ -974,10 +974,10 @@ export const dinosaurs: Record<string, Dinosaur> = {
     time: {
       description:
         "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
-      image: therapodLargeTime,
+      image: theropodLargeTime,
     },
     location: {
-      imageFossil: therapodLargeFossil,
+      imageFossil: theropodLargeFossil,
       imageMap: tyrannosaurusMap,
       county: "Brewster County",
       description:
@@ -987,7 +987,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     size: {
       image: tyrannosaurusSize,
       description:
-        "One of the Big Bend tyrannosaurs is estimated to be about 30 feet long – maybe it was a teenager!",
+        "One of the Big Bend tyrannosaurs is estimated to be about 30 feet long — maybe it was a teenager!",
     },
     funFact1: {
       title: "Two Steppin’!",
@@ -1046,7 +1046,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
     funFact1: {
       title: "Explore More!",
       description:
-        "You can see the fossilized hip bone of a juvenile Alamosaurus on the museum's first floor.",
+        "You can see the fossilized hip bone of a juvenile Alamosaurus on the museum’s first floor.",
     },
     funFact2: {
       image: alamosaurusFunFact2,
