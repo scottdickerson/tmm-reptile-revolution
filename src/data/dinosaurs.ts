@@ -2,11 +2,20 @@ import { shuffle } from "lodash";
 import { Characteristic } from "./questions";
 import { StaticImageData } from "next/image";
 
-import pterosaur from "@/data/dinosaur-images/pterosaur.svg";
-import hornedDinosaur from "@/data/dinosaur-images/horned-dinosaur.gif";
-import therapodLarge from "@/data/dinosaur-images/large-therapod.svg";
-import turtleLand from "@/data/dinosaur-images/turtle-land.svg";
-import turtleSea from "@/data/dinosaur-images/turtle-sea.svg";
+import armoredDinosaur from "@/data/dinosaur-images/armored_dino.gif";
+import bird from "@/data/dinosaur-images/bird.gif";
+import crocodile from "@/data/dinosaur-images/crocodile.gif";
+import duckbillDinosaur from "@/data/dinosaur-images/duckbill_comp.gif";
+import hornedDinosaur from "@/data/dinosaur-images/torosaur_comp.gif";
+import lizard from "@/data/dinosaur-images/lizard_comp.gif";
+import mosasaur from "@/data/dinosaur-images/mosasaur.gif";
+import plesiosaur from "@/data/dinosaur-images/plesiosaur_comp.gif";
+import pterosaur from "@/data/dinosaur-images/pterosaur_2.gif";
+import seaTurtle from "@/data/dinosaur-images/seaTurtle.gif";
+import snake from "@/data/dinosaur-images/snake.gif";
+import therapodLarge from "@/data/dinosaur-images/therapod_lrg.gif";
+import therapodSmall from "@/data/dinosaur-images/theropodSmall.gif";
+import landTurtle from "@/data/dinosaur-images/turtle(land)_comp.gif";
 
 import hornedDinosaurTime from "@/data/timeline-images/horned-dinosaur-time.gif";
 import turtleSeaTime from "@/data/timeline-images/turtle-sea-time.gif";
@@ -145,7 +154,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
       Characteristic.SWIM,
     ],
-    image: turtleSea,
+    image: seaTurtle,
     time: {
       image: turtleSeaTime,
       description:
@@ -198,7 +207,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SHELL_ARMOR_HORNS,
       Characteristic.STOCKY_BODY,
     ],
-    image: turtleLand,
+    image: landTurtle,
     time: {
       image: turtleLandTime,
       description:
@@ -252,7 +261,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.BALANCED_BODY,
       Characteristic.RUN,
     ],
-    image: pterosaur,
+    image: lizard,
     time: {
       image: lizardTime,
       description:
@@ -304,7 +313,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.TEETH_CLAWS,
       Characteristic.LONG_BODY,
     ],
-    image: pterosaur,
+    image: snake,
     time: {
       image: snakeTime,
       description:
@@ -359,7 +368,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
       Characteristic.SWIM,
     ],
-    image: pterosaur,
+    image: crocodile,
     time: {
       image: crocodileLargeTime,
       description:
@@ -414,7 +423,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
       Characteristic.SWIM,
     ],
-    image: pterosaur,
+    image: crocodile,
     time: {
       image: crocodileSmallTime,
       description:
@@ -468,7 +477,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
       Characteristic.SWIM,
     ],
-    image: pterosaur,
+    image: mosasaur,
     time: {
       image: mosasaurTime,
       description:
@@ -523,7 +532,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.LONG_BODY,
       Characteristic.SWIM,
     ],
-    image: pterosaur,
+    image: plesiosaur,
     time: {
       image: plesiosaurLongNeckTime,
       description:
@@ -577,7 +586,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.LONG_BODY,
       Characteristic.SWIM,
     ],
-    image: pterosaur,
+    image: plesiosaur,
     time: {
       image: plesiosaurShortNeckTime,
       description:
@@ -686,7 +695,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.SHELL_ARMOR_HORNS,
       Characteristic.STOCKY_BODY,
     ],
-    image: pterosaur,
+    image: armoredDinosaur,
     time: {
       image: armoredDinosaurTime,
       description:
@@ -795,7 +804,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.STOCKY_BODY,
       Characteristic.RUN,
     ],
-    image: pterosaur,
+    image: duckbillDinosaur,
     time: {
       description:
         "These dinos appeared in the Late Cretaceous, making them one of the last types of dinosaurs to emerge before the extinction event.",
@@ -850,7 +859,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.BALANCED_BODY,
       Characteristic.RUN,
     ],
-    image: pterosaur,
+    image: therapodSmall,
     time: {
       description:
         "The earliest dinosaurs walked on two legs! Non-avian theropods roamed the Earth for over 160 million years.",
@@ -907,7 +916,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.BALANCED_BODY,
       Characteristic.FLY,
     ],
-    image: pterosaur,
+    image: bird,
     time: {
       description:
         "Avian theropods emerged in the Early Cretaceous and they are still part of animal communities around the world.",
