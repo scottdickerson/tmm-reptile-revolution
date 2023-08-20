@@ -11,6 +11,7 @@ import lizard from "@/data/dinosaur-images/lizard.gif";
 import mosasaur from "@/data/dinosaur-images/mosasaur.gif";
 import plesiosaur from "@/data/dinosaur-images/plies.gif";
 import pterosaur from "@/data/dinosaur-images/pterosaur.gif";
+import sauropod from "@/data/dinosaur-images/sauropod.gif";
 import seaTurtle from "@/data/dinosaur-images/seaTurtle.gif";
 import snake from "@/data/dinosaur-images/snake.gif";
 import theropodLarge from "@/data/dinosaur-images/therapod_lrg.gif";
@@ -1024,7 +1025,7 @@ export const dinosaurs: Record<string, Dinosaur> = {
       Characteristic.OTHER_WEAPON,
       Characteristic.LONG_BODY,
     ],
-    image: pterosaur,
+    image: sauropod,
     time: {
       description:
         "Sauropods were one of the earlier dinosaur groups to evolve, but none survived the extinction event at the end of the Cretaceous.",
