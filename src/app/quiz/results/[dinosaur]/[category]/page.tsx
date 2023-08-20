@@ -83,7 +83,7 @@ export default function Results({
           {JSON.stringify(characteristics, null, 2)}
         </h2> */}
       </div>
-      <DinosaurSwitcher />
+      {/* <DinosaurSwitcher /> */}
     </div>
   );
 }
